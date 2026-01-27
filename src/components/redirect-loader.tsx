@@ -6,7 +6,15 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const TOTAL_DURATION_MS = 5000;
 
-export function RedirectLoader({ url, id }: { url: string; id: string }) {
+export function RedirectLoader({
+  url,
+  id,
+  name,
+}: {
+  url: string;
+  id: string;
+  name: string;
+}) {
   const [elapsed, setElapsed] = useState(0);
   const startRef = useRef<number | null>(null);
 
@@ -29,7 +37,7 @@ export function RedirectLoader({ url, id }: { url: string; id: string }) {
   const progress = Math.round((elapsed / TOTAL_DURATION_MS) * 100);
   const secondsLeft = Math.max(
     0,
-    Math.ceil((TOTAL_DURATION_MS - elapsed) / 1000),
+    Math.ceil((TOTAL_DURATION_MS - elapsed) / 1000)
   );
 
   return (
@@ -41,14 +49,14 @@ export function RedirectLoader({ url, id }: { url: string; id: string }) {
         <CardContent className="flex flex-col gap-6 p-6 md:p-8">
           <div className="flex flex-col gap-3">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[color:var(--momo-ink)] opacity-60">
-              YEP 2026 - Gift {id}
+              YEP 2026
             </span>
             <h1 className="text-3xl font-semibold leading-tight text-[color:var(--momo-ink)] md:text-4xl font-[var(--font-display)]">
-              Your surprise is loading.
+              Hi {name}, your surprise is loading.
             </h1>
             <p className="text-sm text-[color:var(--momo-ink)] opacity-70 md:text-base">
-              Get ready to see your Year End Party present. We are preparing
-              the reveal for you.
+              Get ready to see your Year End Party present. We are preparing the
+              reveal for you.
             </p>
           </div>
 
@@ -64,8 +72,7 @@ export function RedirectLoader({ url, id }: { url: string; id: string }) {
             If nothing happens,{" "}
             <a
               className="font-semibold text-[color:var(--momo-pink)] underline"
-              href={url}
-            >
+              href={url}>
               tap here to view your present
             </a>
             .

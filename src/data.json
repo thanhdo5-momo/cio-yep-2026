@@ -1,10 +1,12 @@
 [
   {
     "id": "1",
-    "url": "https://google.com"
+    "url": "https://google.com",
+    "name": "Receiver One"
   },
   {
     "id": "2",
-    "url": "https://facebook.com"
+    "url": "https://facebook.com",
+    "name": "Receiver Two"
   }
 ]
