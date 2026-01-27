@@ -52,7 +52,7 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <h1 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-[color:var(--momo-ink)] md:text-6xl md:leading-tight font-[var(--font-display)]">
               Something Big Is Coming
-              <br /> CIO YEP
+              <br /> CIO Year End Party
             </h1>
           </div>
         </div>
