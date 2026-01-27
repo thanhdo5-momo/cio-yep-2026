@@ -47,11 +47,12 @@ export default function Home() {
 
         <div className="flex flex-col gap-6">
           <Badge className="w-fit rounded-full border-transparent bg-[color:var(--momo-pink)] text-white">
-            MoMo CIO Year End Party 2026
+            MoMo CIO Year End Party
           </Badge>
           <div className="flex flex-col gap-4">
-            <h1 className="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-[color:var(--momo-ink)] md:text-6xl md:leading-tight font-[var(--font-display)]">
-              CIO YEP 2026 countdown.
+            <h1 className="max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-[color:var(--momo-ink)] md:text-6xl md:leading-tight font-[var(--font-display)]">
+              Something Big Is Coming
+              <br /> CIO YEP
             </h1>
           </div>
         </div>
@@ -67,7 +68,7 @@ export default function Home() {
             Stay tuned for the reveal.
           </span>
           <span className="rounded-full bg-[color:var(--momo-cream)] px-4 py-2">
-            #MoMoYEP2026
+            #CIOYEP
           </span>
         </div>
       </main>

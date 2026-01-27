@@ -51,14 +51,14 @@ export function Countdown({ targetIso }: { targetIso: string }) {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <div className="grid grid-cols-4 gap-2 md:gap-4">
       {items.map((item) => (
         <Card
           key={item.label}
           className="border-white/70 bg-white/80 shadow-[0_20px_40px_-28px_rgba(209,0,108,0.6)] backdrop-blur"
         >
-          <CardContent className="flex flex-col items-center gap-2 p-4 md:p-6">
-            <span className="text-3xl font-semibold tracking-tight text-[color:var(--momo-pink)] md:text-4xl">
+          <CardContent className="flex flex-col items-center gap-1 p-2 md:gap-2 md:p-6">
+            <span className="text-xl font-semibold tracking-tight text-[color:var(--momo-pink)] md:text-4xl">
               {item.value}
             </span>
             <span className="text-xs uppercase tracking-[0.2em] text-[color:var(--momo-ink)] opacity-70">
