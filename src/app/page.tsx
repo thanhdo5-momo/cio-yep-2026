@@ -9,7 +9,7 @@ export default function Home() {
     <div className="relative min-h-screen overflow-hidden">
       <FireworksBackground
         className="pointer-events-auto z-0"
-        population={25}
+        population={50}
         color={[
           "#d1006c",
           "#ff4d7d",
@@ -20,7 +20,7 @@ export default function Home() {
         ]}
         autoLaunch={true}
         autoLaunchInterval={400}
-        fireworkSpeed={{ min: 10, max: 16 }}
+        fireworkSpeed={{ min: 40, max: 80 }}
         particleSize={{ min: 2, max: 5 }}
       />
       <div className="pointer-events-none absolute -top-24 right-8 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(209,0,108,0.45),_transparent_70%)] blur-2xl animate-[float_9s_ease-in-out_infinite]" />
