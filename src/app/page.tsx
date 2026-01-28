@@ -30,7 +30,7 @@ export default function Home() {
       <div className="pointer-events-none absolute left-10 top-1/3 h-52 w-52 rounded-full bg-[radial-gradient(circle,_rgba(255,106,167,0.4),_transparent_70%)] blur-2xl animate-[float_7s_ease-in-out_infinite]" />
       <div className="pointer-events-none absolute bottom-10 right-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,_rgba(255,77,125,0.35),_transparent_70%)] blur-3xl animate-[float_10s_ease-in-out_infinite]" />
 
-      <main className="fixed bottom-[15%] left-0 right-0 z-10 flex flex-col gap-6 px-6 md:bottom-[10%] md:gap-8">
+      <main className="fixed bottom-[10%] left-0 right-0 z-10 flex flex-col gap-6 px-6 md:bottom-[10%] md:gap-8">
         <Card className="mx-auto w-full max-w-6xl border-white/70 bg-white/80 shadow-[0_30px_60px_-40px_rgba(209,0,108,0.7)] backdrop-blur">
           <CardContent className="flex flex-col gap-6 p-6 md:p-8">
             <Countdown targetIso="2026-02-03T13:00:00.000Z" />
@@ -46,7 +46,7 @@ export default function Home() {
             className="h-12 w-auto md:h-16"
           />
           <Image
-            src="/assets/cio_logo.png"
+            src="/assets/white_cio_logo.png"
             alt="CIO Logo"
             width={80}
             height={80}
