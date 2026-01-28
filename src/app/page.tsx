@@ -48,9 +48,9 @@ export default function Home() {
           <Image
             src="/assets/white_cio_logo.png"
             alt="CIO Logo"
-            width={80}
-            height={80}
-            className="h-12 w-auto md:h-16"
+            width={60}
+            height={60}
+            className="h-6 w-auto md:h-12"
           />
         </div>
       </main>
