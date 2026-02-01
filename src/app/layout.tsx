@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Dancing_Script, Space_Grotesk } from "next/font/google";
+import {
+  Be_Vietnam_Pro,
+  Dancing_Script,
+  Space_Grotesk,
+} from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const brandSans = Be_Vietnam_Pro({
@@ -34,9 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${brandSans.variable} ${brandDisplay.variable} ${dancingScript.variable} antialiased`}
-      >
+        className={`${brandSans.variable} ${brandDisplay.variable} ${dancingScript.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
