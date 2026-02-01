@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const calendar = {
   month: "FEBRUARY 2026",
@@ -15,7 +16,7 @@ const calendar = {
   highlightDay: 3,
 };
 
-const TYPEWRITER_SPEED = 30;
+const TYPEWRITER_SPEED = 15;
 
 function useTypewriter(text: string, start: boolean, speed = TYPEWRITER_SPEED) {
   const [displayed, setDisplayed] = useState("");
@@ -45,14 +46,14 @@ export default function AppreciationExp() {
     "envelope" | "opening" | "opened" | "card" | "content"
   >("envelope");
 
-  const greeting = "Tùng thân mến,";
+  const greeting = "Tuyết thân mến,";
   const message =
-    'Chất lượng quyết định "ăn thua" ở những chỗ rất nhỏ: logic, assumption, độ tin cậy dữ liệu và độ chắc của giải pháp - nên cần người có lực duy sâu và kỹ.\nTùng làm việc cẩn thận, suy nghĩ sâu, hay nhìn ...';
+    "Chị thật sự biết ơn Tuyết vì đã luôn ở bên cạnh chị trong cả những giai đoạn thuận lợi lẫn những lúc khó khăn nhất. Có những thời điểm chị rơi vào trạng thái ngợp và mệt mỏi vì áp lực công việc và trách nhiệm, và chính sự lắng nghe, chia sẻ rất chân thành của Tuyết đã giúp chị có thêm điểm tựa để đi tiếp. Khi Tuyết quay trở lại làm việc, em không chỉ phải học lại và học thêm rất nhiều điều mới trong công việc, mà còn đồng thời đảm đương một vai trò hoàn toàn mới và đầy thử thách là làm mẹ. Trong bối cảnh đó, Tuyết vẫn giữ cho mình tinh thần trách nhiệm cao, nỗ lực thích nghi và hoàn thành công việc một cách nghiêm túc. Sự hiện diện và đóng góp của em đã giúp team dần ổn định hơn, và giúp chị thoát khỏi cảm giác phải gồng mình xử lý mọi thứ một mình. \nTừ góc nhìn của chị, em sở hữu một tiềm năng rất lớn, vượt xa những gì em đang tự nhìn nhận. Chị tin rằng nếu tiếp tục tin vào chính mình, Tuyết có thể phát triển và tỏa sáng ở bất kỳ đâu.";
   const signature = "Anh Khang";
 
-  const greetingTw = useTypewriter(greeting, phase === "content", 40);
+  const greetingTw = useTypewriter(greeting, phase === "content", 20);
   const messageTw = useTypewriter(message, greetingTw.done, TYPEWRITER_SPEED);
-  const signatureTw = useTypewriter(signature, messageTw.done, 50);
+  const signatureTw = useTypewriter(signature, messageTw.done, 25);
 
   const isCardVisible = phase === "card" || phase === "content";
 
@@ -63,13 +64,6 @@ export default function AppreciationExp() {
     setTimeout(() => setPhase("card"), 1400);
     setTimeout(() => setPhase("content"), 2200);
   }, [phase]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (phase === "envelope") handleEnvelopeClick();
-    }, 1500);
-    return () => clearTimeout(timer);
-  }, [phase, handleEnvelopeClick]);
 
   return (
     <div className="flex min-h-dvh items-center justify-center bg-[#f5f0eb] px-4 py-8">
@@ -83,8 +77,8 @@ export default function AppreciationExp() {
           transform: isCardVisible ? "scale(0.9)" : "scale(1)",
           pointerEvents: isCardVisible ? "none" : "auto",
           position: isCardVisible ? "absolute" : "relative",
-        }}
-      >
+          animation: phase === "envelope" ? "wiggle 1.5s ease-in-out infinite" : "none",
+        }}>
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-b-lg rounded-t-sm bg-gradient-to-b from-[#e8d5c4] to-[#d4b896] shadow-2xl">
           {/* Inner letter peek */}
           <div className="absolute inset-x-3 top-3 bottom-3 rounded bg-white/40" />
@@ -93,12 +87,8 @@ export default function AppreciationExp() {
           <svg
             className="absolute bottom-0 left-0 right-0"
             viewBox="0 0 400 150"
-            preserveAspectRatio="none"
-          >
-            <polygon
-              points="0,0 200,150 400,0 400,150 0,150"
-              fill="#c9a882"
-            />
+            preserveAspectRatio="none">
+            <polygon points="0,0 200,150 400,0 400,150 0,150" fill="#c9a882" />
             <polygon
               points="0,0 200,120 400,0"
               fill="#d4b896"
@@ -106,15 +96,6 @@ export default function AppreciationExp() {
               strokeWidth="0.5"
             />
           </svg>
-
-          {/* Tap hint */}
-          {phase === "envelope" && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="animate-pulse rounded-full bg-white/60 px-4 py-2 text-sm font-medium text-[#8a6d50] shadow">
-                Tap to open
-              </span>
-            </div>
-          )}
         </div>
 
         {/* Envelope flap */}
@@ -128,8 +109,7 @@ export default function AppreciationExp() {
                 : "rotateX(0deg)",
             transition: "transform 800ms ease-in-out",
             zIndex: phase === "opening" || phase === "opened" ? 0 : 10,
-          }}
-        >
+          }}>
           <svg viewBox="0 0 400 170" className="w-full">
             <polygon
               points="0,0 200,170 400,0"
@@ -160,8 +140,7 @@ export default function AppreciationExp() {
           transitionTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
           pointerEvents: isCardVisible ? "auto" : "none",
           position: isCardVisible ? "relative" : "absolute",
-        }}
-      >
+        }}>
         <div className="overflow-hidden rounded-lg bg-white shadow-2xl">
           {/* Logos */}
           <div className="flex items-center justify-end gap-3 px-8 pt-8">
@@ -183,19 +162,15 @@ export default function AppreciationExp() {
 
           {/* Thank you + Calendar */}
           <div className="flex px-8 pt-5">
-            {/* Thank you text - rotated */}
             <div className="flex w-16 shrink-0 items-center justify-center">
               <span
                 className="-rotate-90 whitespace-nowrap text-5xl italic text-[#1a2a5e]"
                 style={{
                   fontFamily: "var(--font-dancing-script), cursive",
-                }}
-              >
+                }}>
                 Thank you
               </span>
             </div>
-
-            {/* Calendar */}
             <div className="flex-1 pl-3">
               <h3 className="mb-3 text-center text-sm font-bold tracking-widest text-[#1a2a5e]">
                 {calendar.month}
@@ -206,8 +181,7 @@ export default function AppreciationExp() {
                     {calendar.days.map((day) => (
                       <th
                         key={day}
-                        className="pb-2 font-semibold text-[#1a2a5e]"
-                      >
+                        className="pb-2 font-semibold text-[#1a2a5e]">
                         {day}
                       </th>
                     ))}
@@ -217,10 +191,7 @@ export default function AppreciationExp() {
                   {calendar.weeks.map((week, i) => (
                     <tr key={i}>
                       {week.map((day) => (
-                        <td
-                          key={day}
-                          className="py-1 text-[#1a2a5e]"
-                        >
+                        <td key={day} className="py-1 text-[#1a2a5e]">
                           {day === calendar.highlightDay ? (
                             <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-[#d1006c] text-xs font-bold text-[#d1006c]">
                               {day}
@@ -244,21 +215,55 @@ export default function AppreciationExp() {
               height="40"
               viewBox="0 0 80 40"
               fill="none"
-              className="text-[#8a9a7a] opacity-60"
-            >
+              className="text-[#8a9a7a] opacity-60">
               <path
                 d="M5 35 Q20 20 40 22 Q60 24 75 5"
                 stroke="currentColor"
                 strokeWidth="1.5"
                 fill="none"
               />
-              <path d="M40 22 Q38 15 42 8" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M40 22 Q45 16 50 12" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M40 22 Q35 18 33 12" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M55 15 Q58 10 62 7" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M55 15 Q52 10 50 6" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M25 28 Q22 22 24 16" stroke="currentColor" strokeWidth="1" fill="none" />
-              <path d="M25 28 Q28 23 32 18" stroke="currentColor" strokeWidth="1" fill="none" />
+              <path
+                d="M40 22 Q38 15 42 8"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M40 22 Q45 16 50 12"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M40 22 Q35 18 33 12"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M55 15 Q58 10 62 7"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M55 15 Q52 10 50 6"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M25 28 Q22 22 24 16"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
+              <path
+                d="M25 28 Q28 23 32 18"
+                stroke="currentColor"
+                strokeWidth="1"
+                fill="none"
+              />
             </svg>
           </div>
 
@@ -266,8 +271,7 @@ export default function AppreciationExp() {
           <div className="px-8 pb-8 pt-2">
             <p
               className="mb-4 min-h-8 text-xl text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}
-            >
+              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
               {phase === "content" ? greetingTw.displayed : ""}
               {!greetingTw.done && phase === "content" && (
                 <span className="animate-pulse">|</span>
@@ -275,8 +279,7 @@ export default function AppreciationExp() {
             </p>
             <p
               className="mb-6 min-h-20 whitespace-pre-line text-base leading-relaxed text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}
-            >
+              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
               {greetingTw.done ? messageTw.displayed : ""}
               {greetingTw.done && !messageTw.done && (
                 <span className="animate-pulse">|</span>
@@ -284,13 +287,23 @@ export default function AppreciationExp() {
             </p>
             <p
               className="min-h-8 text-right text-xl font-semibold italic text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}
-            >
+              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
               {messageTw.done ? signatureTw.displayed : ""}
               {messageTw.done && !signatureTw.done && (
                 <span className="animate-pulse">|</span>
               )}
             </p>
+
+            {signatureTw.done && (
+              <div className="mt-8 flex justify-center">
+                <Link
+                  href="/appreciation"
+                  className="rounded-full bg-[#1a2a5e] px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#d1006c] hover:shadow-lg"
+                >
+                  Khám phá các lời gửi gắm khác
+                </Link>
+              </div>
+            )}
           </div>
         </div>
       </div>
