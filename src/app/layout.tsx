@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Space_Grotesk } from "next/font/google";
+import { Be_Vietnam_Pro, Dancing_Script, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const brandSans = Be_Vietnam_Pro({
   variable: "--font-brand-sans",
   subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "600", "700", "800"],
+});
+
+const dancingScript = Dancing_Script({
+  variable: "--font-dancing-script",
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const brandDisplay = Space_Grotesk({
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${brandSans.variable} ${brandDisplay.variable} antialiased`}
+        className={`${brandSans.variable} ${brandDisplay.variable} ${dancingScript.variable} antialiased`}
       >
         {children}
       </body>
