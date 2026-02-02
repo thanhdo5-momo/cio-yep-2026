@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" fill="none">
+  <defs>
+    <linearGradient id="flapFill" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#f5f3f0"/>
+      <stop offset="60%" stop-color="#f0eeeb"/>
+      <stop offset="100%" stop-color="#eae7e3"/>
+    </linearGradient>
+    <linearGradient id="flapEdgeLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d5d2cd"/>
+      <stop offset="100%" stop-color="#e8e5e0"/>
+    </linearGradient>
+    <linearGradient id="flapEdgeRight" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8c5c0"/>
+      <stop offset="100%" stop-color="#e0ddd8"/>
+    </linearGradient>
+    <filter id="flapShadow" x="-2%" y="-2%" width="104%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Flap triangle -->
+  <polygon points="2,0 350,278 698,0" fill="url(#flapFill)" filter="url(#flapShadow)"/>
+
+  <!-- Left edge crease -->
+  <line x1="2" y1="0" x2="350" y2="278" stroke="url(#flapEdgeLeft)" stroke-width="0.8"/>
+  <!-- Right edge crease -->
+  <line x1="698" y1="0" x2="350" y2="278" stroke="url(#flapEdgeRight)" stroke-width="0.8"/>
+</svg>
