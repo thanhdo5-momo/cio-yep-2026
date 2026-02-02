@@ -1,0 +1,65 @@
+{
+  "teams": [
+    {
+      "name": "Team 1",
+      "members": [
+        "Trần Thị Thu Nhi",
+        "Bùi Hà Phương",
+        "Trần Minh Khang",
+        "Hoàng Nhật Thu",
+        "Lưu Thị Phương Thảo",
+        "Y Phi Thảo",
+        "Đỗ Quang Thuận",
+        "Trần Thị Thảo Nguyên",
+        "Lê Anh Tuấn",
+        "Hồ Đoan Phương",
+        "Huỳnh Bảo Thạch"
+      ]
+    },
+    {
+      "name": "Team 2",
+      "members": [
+        "Trần Văn Tuấn",
+        "Đào Thị Trâm Anh",
+        "Trần Thị Thanh Hằng",
+        "Trần Ngọc Quyên",
+        "Trịnh Nhâm Hoàng",
+        "Nguyễn Linh Trang",
+        "Nguyễn Khánh Toàn",
+        "Vũ Thị Thu Hương",
+        "Nguyễn Văn Hoài Trung",
+        "Ô Gia Hân"
+      ]
+    },
+    {
+      "name": "Team 3",
+      "members": [
+        "Trương Võ Thiện Nhân",
+        "La Thị Hồng Thắm",
+        "Võ Thị Thúy Hiền",
+        "Phạm Thị Ánh Tuyết",
+        "Ngô Thị Kim Phượng",
+        "Trần Thị Hồng Ngọc",
+        "Lương Kim Thanh",
+        "Bùi Nhất Sang",
+        "Dương Thanh Đăng",
+        "Nguyễn Ngọc Thùy Khanh"
+      ]
+    },
+    {
+      "name": "Team 4",
+      "members": [
+        "Trương Lê Quốc Bảo",
+        "Nguyễn Tiến Khoa",
+        "Lê Thảo Nguyên",
+        "Phạm Lê Thanh Hà",
+        "Ao Thị Thu Ngân",
+        "Vũ Hương Thảo",
+        "Đỗ Thị Quỳnh An",
+        "Trần Nhơn Nghĩa",
+        "Nguyễn Kim Xuân Nguyên",
+        "Nguyễn Ngọc Bảo Hân"
+      ]
+    }
+  ]
+}
