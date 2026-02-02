@@ -71,7 +71,12 @@ function ShareMenu() {
       color: "#1877F2",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pageUrl)}`,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="currentColor">
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
         </svg>
       ),
@@ -81,7 +86,12 @@ function ShareMenu() {
       color: "#E4405F",
       href: `https://www.instagram.com/`,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="currentColor">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
         </svg>
       ),
@@ -91,7 +101,12 @@ function ShareMenu() {
       color: "#000000",
       href: `https://www.tiktok.com/`,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="currentColor">
           <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
         </svg>
       ),
@@ -103,7 +118,16 @@ function ShareMenu() {
       <button
         onClick={() => setOpen((v) => !v)}
         className="flex items-center gap-1.5 text-sm text-[#1a2a5e]/70 transition-colors hover:text-[#d1006c]">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round">
           <circle cx="18" cy="5" r="3" />
           <circle cx="6" cy="12" r="3" />
           <circle cx="18" cy="19" r="3" />
@@ -132,11 +156,29 @@ function ShareMenu() {
               title="Copy link"
               className="flex h-9 w-9 items-center justify-center rounded-full text-[#1a2a5e]/60 transition-transform hover:scale-110 hover:text-[#1a2a5e]">
               {copied ? (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#16a34a"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               ) : (
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
                   <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                   <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                 </svg>
@@ -157,7 +199,7 @@ export default function AppreciationExp() {
 
   const greeting = "Tuyết thân mến,";
   const message =
-    "Chị thật sự biết ơn Tuyết vì đã luôn ở bên cạnh chị trong cả những giai đoạn thuận lợi lẫn những lúc khó khăn nhất. Có những thời điểm chị rơi vào trạng thái ngợp và mệt mỏi vì áp lực công việc và trách nhiệm, và chính sự lắng nghe, chia sẻ rất chân thành của Tuyết đã giúp chị có thêm điểm tựa để đi tiếp. Khi Tuyết quay trở lại làm việc, em không chỉ phải học lại và học thêm rất nhiều điều mới trong công việc, mà còn đồng thời đảm đương một vai trò hoàn toàn mới và đầy thử thách là làm mẹ. Trong bối cảnh đó, Tuyết vẫn giữ cho mình tinh thần trách nhiệm cao, nỗ lực thích nghi và hoàn thành công việc một cách nghiêm túc. Sự hiện diện và đóng góp của em đã giúp team dần ổn định hơn, và giúp chị thoát khỏi cảm giác phải gồng mình xử lý mọi thứ một mình. \nTừ góc nhìn của chị, em sở hữu một tiềm năng rất lớn, vượt xa những gì em đang tự nhìn nhận. Chị tin rằng nếu tiếp tục tin vào chính mình, Tuyết có thể phát triển và tỏa sáng ở bất kỳ đâu. Chị thật sự biết ơn Tuyết vì đã luôn ở bên cạnh chị trong cả những giai đoạn thuận lợi lẫn những lúc khó khăn nhất. Có những thời điểm chị rơi vào trạng thái ngợp và mệt mỏi vì áp lực công việc và trách nhiệm, và chính sự lắng nghe, chia sẻ rất chân thành của Tuyết đã giúp chị có thêm điểm tựa để đi tiếp. Khi Tuyết quay trở lại làm việc, em không chỉ phải học lại và học thêm rất nhiều điều mới trong công việc, mà còn đồng thời đảm đương một vai trò hoàn toàn mới và đầy thử thách là làm mẹ. Trong bối cảnh đó, Tuyết vẫn giữ cho mình tinh thần trách nhiệm cao, nỗ lực thích nghi và hoàn thành công việc một cách nghiêm túc. Sự hiện diện và đóng góp của em đã giúp team dần ổn định hơn, và giúp chị thoát khỏi cảm giác phải gồng mình xử lý mọi thứ một mình. \nTừ góc nhìn của chị, em sở hữu một tiềm năng rất lớn, vượt xa những gì em đang tự nhìn nhận. Chị tin rằng nếu tiếp tục tin vào chính mình, Tuyết có thể phát triển và tỏa sáng ở bất kỳ đâu.";
+    "Đằng sau sự chuyển mình mạnh mẽ của CIO là niềm tin và sự đồng hành bền bỉ từ Trang và SPS. CIO không thể đi xa đến vậy nếu thiếu sự tin tưởng và hỗ trợ kịp thời từ Trang, từ việc chia sẻ dữ liệu merchants, ủng hộ các sản phẩm mới, đến việc trực tiếp giới thiệu sản phẩm của CIO, đọc và áp dụng các báo cáo nghiên cứu. Trang cũng thường xuyên đồng hành cùng CIO với vai trò giám khảo và diễn giả, góp phần kết nối insight với bài toán thực tiễn và nâng tầm giá trị CIO trong tổ chức. \n  \n Trang luôn toát ra một nguồn năng lượng tích cực và sự chỉnh chu rất rõ nét trong mọi sản phẩm mình làm, từ những bản kế hoạch năm dài (vâng rất dài) và chi tiết, đến cách tổ chức các cuộc thi và sự kiện nội bộ của SPS. Trang là nguồn cảm hứng cho business head ở sự bền bỉ và quyết liệt trong các dự án lớn, đồng thời cũng mang lại tinh thần hứng khởi cho đội ngũ qua những hoạt động gắn kết, từ các trận “quậy banh panda” cho đến sân khấu Offsite hay M15. \n  \n Những buổi họp business của SPS đôi khi truyền cảm hứng, đôi khi tạo áp lực, nhưng CIO tin rằng chính phong cách lãnh đạo đó đã góp phần quan trọng giúp SPS đạt được những kết quả tích cực, từ Offline Payment trước đây cho đến Soundbox ở hiện tại. CIO cũng trân trọng việc Trang luôn gần gũi, chia sẻ với các thành viên CIO về quản lý, về cơ hội phát triển, và thường xuyên đồng hành cùng CIO trong các hoạt động chung như CBMC. \n  \n CIO thật sự biết ơn sự tin tưởng, nâng đỡ và ủng hộ cả về tinh thần lẫn tài chính (😛) mà Trang dành cho CIO. Hình ảnh Trang, một người lãnh đạo giỏi, một “vận động viên đa môn” xuất sắc, một diễn giả duyên dáng và một đồng nghiệp đáng tin cậy, luôn là nguồn cảm hứng để đội ngũ CIO nỗ lực hơn mỗi ngày. \n  \n Chúc cho năm 2026 của Trang và của SPS thật rực rỡ. Và như Trang đã biết, bất cứ khi nào SPS cần, CIO luôn sẵn sàng đồng hành và hỗ trợ trong mọi “trận đánh”";
   const signature = "Anh Khang";
 
   const greetingTw = { displayed: greeting, done: true };
@@ -336,16 +378,19 @@ export default function AppreciationExp() {
             <p
               className="mt-6 text-center text-xl leading-relaxed"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              <span className="text-[#d1006c] italic">Thank you for being one of the reasons</span>
+              <span className="text-[#d1006c] italic">
+                Thank you for being one of the reasons
+              </span>
               <br />
-              <span className="text-[#1a2a5e] font-bold italic">that make CIO truly special</span>
+              <span className="text-[#1a2a5e] font-bold italic">
+                that make CIO truly special
+              </span>
             </p>
             <p
               className="mt-4 text-right text-xl font-semibold italic text-[#1a2a5e]"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
               {signatureTw.displayed}
             </p>
-
           </div>
         </div>
         {signatureTw.done && (
@@ -354,7 +399,16 @@ export default function AppreciationExp() {
               <button
                 onClick={handleDownload}
                 className="flex items-center gap-1.5 text-sm text-[#1a2a5e]/70 transition-colors hover:text-[#d1006c]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                   <polyline points="7 10 12 15 17 10" />
                   <line x1="12" y1="15" x2="12" y2="3" />

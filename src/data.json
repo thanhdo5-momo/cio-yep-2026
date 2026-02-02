@@ -1,12 +1,428 @@
 [
   {
     "id": "1",
-    "url": "https://google.com",
-    "name": "Receiver One"
+    "name": "Trần Thị Thu Nhi",
+    "image": "nhi.tran2.png",
+    "open": "Chị Nhi thân mến,",
+    "body": "Trong năm qua, Team CIO đã có rất nhiều sự thay đổi, vừa phải chạy nhiều đầu việc mới toanh, vừa phải giữ chất lượng vận hành, vừa đáp ứng các yêu cầu stakeholder với áp lực timeline cao. Em luôn ra quyết định nhanh và rõ, chủ động “đứng mũi chịu sào” để bảo vệ quyền lợi của phòng mình, đồng thời giữ định hướng customer-centric xuyên suốt trong cách ưu tiên việc và đặt tiêu chuẩn chất lượng. \n Nhờ vậy, Team an tâm làm việc hơn, giảm friction với các bên liên quan, và kết quả đầu ra có tính nhất quán - đúng nhu cầu và đúng mục tiêu của sếp lẫn MoMo. Cảm ơn em vì sự mạnh mẽ, quyết đoán nhưng vẫn ấm áp và nâng đỡ - vừa bảo vệ Team, vừa giúp mỗi người có cơ hội lớn lên. Mong thời gian tới tất cả các bạn trong CIO sẽ tiếp tục được học cách em “đặt khách hàng ở trung tâm” và chuyển hóa điều đó thành impact rõ ràng hơn nữa.",
+    "end": "CIO Team."
   },
   {
     "id": "2",
-    "url": "https://facebook.com",
-    "name": "Receiver Two"
+    "name": "Bùi Hà Phương",
+    "image": "phuong.bui.png",
+    "open": "Phương thân mến,",
+    "body": "Bước sang hành trình 2025, khi team không chỉ cần làm tốt research mà còn phải chủ động transform, đầu tiên là thử sức vai trò dẫn dắt kinh doanh & cụ thể từ cuối năm 2024, đầu năm 2025 Phương đảm nhận vai trò Biz Lead cho CVS, đây là một cột mốc đáng chú ý, bởi đây là lần đầu Phương bước ra khỏi “vùng an toàn” research thuần túy để thử sức ở một vai trò hoàn toàn mới, nơi mà chị có cơ hội nhìn rõ hơn những thế mạnh khác của Phương mà trước đây thường bị lu mờ bởi analytical và strategic khi làm research. Thực ra khi quan sát được rồi thì thấy lúc nào Phương cũng sử dụng bộ talent này đấy :D \n Trong dự án CVS, Phương luôn chủ động include stakeholder rất sớm để tạo buy-in, đồng thuận và cùng kéo dự án về một hướng chung từ việc kéo Toàn Hán vào brainstorm cho solution cho đến việc involve các bạn marketing, growth vào để viết content cho sản phẩm Thử tài dự đoán. Ở khía cạnh khác, dù nguồn lực có như thế nào, khi đã nhận dự án, Phương luôn đặt mục tiêu tạo ra kết quả có quy mô và ảnh hưởng lớn nhất có thể, từ đó tận dụng tối đa mọi nguồn lực hiện có. \n Để làm được điều đó, Phương vận dụng linh hoạt nhiều talents: Arranger để sắp xếp nguồn lực, Strategic & Analytical để nhìn bài toán có chiều sâu, Restorative để tháo gỡ vấn đề, Ideation để mở ra hướng đi mới. Đặc biệt, chị rất ấn tượng với khả năng học hỏi của Phương: trước những đề bài mới, Phương không ngần ngại lao vào đọc, hỏi, tìm hiểu đến cùng để nắm bản chất vấn đề. \n Nhờ cách tiếp cận bao trùm và tư duy tạo ảnh hưởng, Phương giúp dự án không chỉ “chạy được” mà còn tạo ra giá trị rõ ràng cho các bên liên quan. Sự hiện diện của Phương thường mang lại cảm giác yên tâm cho stakeholder và tất nhiên, là chị nữa :D vì dự án được dẫn dắt có cấu trúc, có tầm nhìn và có kết quả cụ thể. \n Chị rất trân trọng cách Phương luôn đón nhận mọi dự án, chủ động mở rộng vai trò của mình và dám bước sang những “địa hạt” mới với tinh thần cầu tiến và trách nhiệm cao. Ở vai trò leader trong thời gian tới, chị mong Phương tiếp tục lan tỏa ảnh hưởng tích cực này cho team, đồng thời chậm lại một nhịp để tận hưởng những thành tựu mình đã tạo ra, ghi nhận và khen ngợi nhiều hơn những nỗ lực của đội ngũ. Điều đó sẽ giúp sức ảnh hưởng của Phương không chỉ mạnh, mà còn bền và sâu hơn.",
+    "end": "Chị Nhi."
+  },
+  {
+    "id": "3",
+    "name": "Đào Thị Trâm Anh",
+    "image": "anh.dao.png",
+    "open": "Anh thân mến,",
+    "body": "Chị thật sự trân trọng tinh thần dám làm và sẵn sàng thử cái mới của Trâm Anh trong suốt quá trình làm việc cùng nhau. Dù là những scope hoàn toàn mới  như Second Brain, hay những kỹ năng mới như làm việc với stakeholders để cùng xây dựng dự án, em vẫn chủ động nhận trách nhiệm, không né tránh và luôn giữ thái độ học hỏi rất nghiêm túc. Điều chị đánh giá cao ở em là khả năng học hỏi, ghi nhận lại những gì chị hướng dẫn một cách đầy đủ và chi tiết, sau đó thực hiện lại rất chỉn chu và có trách nhiệm. Ngay cả khi chị đặt em vào những tình huống khá khó xử và áp lực, em vẫn lựa chọn cố gắng tìm cách xử lý ổn thỏa thay vì bỏ cuộc hay đùn đẩy. Những nỗ lực đó cho thấy ở em không chỉ là sự chăm chỉ, mà còn là tinh thần phát triển và mong muốn tiến về phía trước. Chị tin rằng nếu tiếp tục giữ vững tinh thần này, sẽ không có điều gì có thể khiến em sợ hãi, và em hoàn toàn có thể tự tin vươn tới những chặng đường xa hơn trong hành trình của mình.",
+    "end": "Chị Phương."
+  },
+  {
+    "id": "4",
+    "name": "Đỗ Chí Thành",
+    "image": "thanh.do5.png",
+    "open": "Thành thân mến,",
+    "body": "Trong môi trường công việc nhiều deadline và nhịp chạy liên tục, tinh thần và năng lượng của team đôi khi là thứ “giữ lửa” quan trọng. \n Thành luôn xuất hiện với thái độ vui vẻ, hòa nhập nhanh, biết tạo tiếng cười đúng lúc và kéo không khí của cả nhóm lên một cách tự nhiên. \n Nhờ đó, team làm việc “dễ thở” hơn, giao tiếp trơn tru hơn và những lúc áp lực cao cũng bớt căng thẳng - mọi người cảm thấy được kết nối và có thêm động lực. \n Cảm ơn Thành vì đã mang đến một nguồn năng lượng rất “đáng quý” cho CIO. Mong thời gian tới Thành tiếp tục giữ vibe tích cực đó và lan tỏa nhiều hơn nữa trong những hoạt động chung của team.",
+    "end": "Anh Khang."
+  },
+  {
+    "id": "5",
+    "name": "Đỗ Thu Ngân",
+    "image": "ngan.do.png",
+    "open": "Ngân thân mến,",
+    "body": "Team đối mặt với các dự án phức tạp đan xen giữa định tính (Quali) và định lượng (Quanti). Dù chuyên môn chính là Quali, Ngân thường xuyên được giao các thử thách trái tay với áp lực về độ chính xác cao của Quanti. Ngân luôn đón nhận nhiệm vụ với thái độ sẵn sàng (Can-do attitude), không từ chối hay trì hoãn. Em chủ động nghiên cứu thêm các phương pháp xử lý dữ liệu số để bù đắp khoảng cách chuyên môn mà không cần quá nhiều sự đôn đốc. \n Các dự án Quanti được hoàn thành đúng hạn, đảm bảo chất lượng cam kết với khách hàng. Sự linh hoạt của em giúp team giải tỏa được điểm nghẽn về nhân sự trong những giai đoạn cao điểm. Một khi đã nhận lời, em sẽ làm đến cùng với sự cam kết tuyệt đối. Em có khả năng hấp thụ kiến thức mới ngoài vùng an toàn một cách nhanh chóng. \n Cảm ơn Ngân vì sự bền bỉ và tính cam kết cao. Năm tới, hy vọng Ngân sẽ bùng nổ hơn, bứt phá hơn với talent của mình",
+    "end": "Chị Hà."
+  },
+  {
+    "id": "6",
+    "name": "Đoàn Võ Quế Chi",
+    "image": "chi.doan.png",
+    "open": "Chi thân mến,",
+    "body": "Khi team đối mặt với dự án khó có tiến độ sát sao và đòi hỏi sự phối hợp liên phòng ban phức tạp, chúng ta cần một nhân tố có khả năng phá băng để đảm bảo mọi thứ không bị đình trệ. Chi thể hiện tinh thần Ownership tuyệt vời. Chi học nhanh, áp dụng ngay để tối ưu quy trình. Điểm nhận diện thương hiệu của Chi là sự quyết liệt: không ngại va chạm, sẵn sàng dí từ đồng nghiệp đến đối tác để đảm bảo từng mắt xích phải chạy đúng tiến độ. \n Chi đã giải tỏa các điểm nghẽn thực thi, giúp các dự án về đích đúng hạn và ấp thụ kiến thức mới cực nhanh, biến nó thành công cụ thực chiến tức thì. Chi lám đuổi mục tiêu đến cùng; việc dí tiến độ là biểu hiện cao nhất của trách nhiệm với kết quả chung. Chị luôn cảm tháy Chi  giao tiếp tự tin, không ngại người lạ, có khả năng tác động mạnh mẽ để đạt mục tiêu. \n Chi chính là động cơ đưa con tàu của team vượt dốc. Trong năm tới, hãy nâng tầm nghệ thuật dí thành kỹ năng Dẫn dắt (Influencing) nhé. ",
+    "end": "Chị Hà."
+  },
+  {
+    "id": "7",
+    "name": "Hoàng Nhật Thu",
+    "image": "thu.hoang1.png",
+    "open": "Thu thân mến,",
+    "body": "Chị ghi nhận nỗ lực của Thu trong việc học quanti và chủ động phát triển bản thân. Em không ngại phần khó, kiên trì học hỏi và cải thiện từng chút một. Chị cũng đánh giá cao sự chỉnh chu của em trong công việc — cẩn thận, có trách nhiệm và luôn giữ tiêu chuẩn rõ ràng cho những gì mình đảm nhận. Điều đó phản ánh cách em trân trọng công việc và những giá trị em theo đuổi. \n Bên cạnh đó, Thu là người luôn quan tâm và chăm sóc những người xung quanh một cách tự nhiên. Từ những điều nhỏ nhất, em luôn để ý, hỏi han và tạo cảm giác dễ chịu cho người khác khi làm việc cùng. Sự ấm áp đó góp phần tạo nên một môi trường làm việc tích cực và dễ gắn kết hơn. \n Và không thể không nhắc đến việc em luôn mang đến một nguồn năng lượng tươi tắn, xinh đẹp, rạng rỡ cho team. \n Cảm ơn em vì những nỗ lực bền bỉ và sự tử tế đó. Chúc Thu luôn giữ được tinh thần học hỏi và năng lượng tích cực để tiếp tục phát triển và toả sáng trên hành trình phía trước.",
+    "end": "Chị Tuyết."
+  },
+  {
+    "id": "8",
+    "name": "La Thị Hồng Thắm",
+    "image": "tham.la.png",
+    "open": "Thắm thân mến,",
+    "body": "Năm 2025, team Ops vừa phải giữ nhịp vận hành ổn định, vừa nâng chuẩn chất lượng recruit và set-up phỏng vấn; đồng thời team cũng bắt đầu chạm vào những bài toán mới liên quan đến automation và AI. Điểm anh trân trọng nhất là em đã bước ra khỏi vùng an toàn: chủ động “mò” AI nhiều hơn, cùng thử nghiệm và triển khai tool call-out với agent ID để hỗ trợ vận hành/ giảm friction. Bên cạnh chuyên môn, em còn là người nhiệt tình, support hết lòng, dễ đồng cảm - luôn có mặt khi đồng đội cần gỡ rối hoặc cần một câu bông đùa, lời động viên đúng lúc. \n Cảm ơn Thắm vì sự bền bỉ, tinh thần “đã nhận là làm tới” và sự tử tế với con người - đó là thứ làm team vừa mạnh hơn vừa ấm hơn. Mong năm tới em tiếp tục giữ vai trò “xương sống vận hành”, đồng thời đi sâu thêm vào AI/ automation để tạo impact lớn hơn nữa cho Ops của mình cũng như cho CIO nha",
+    "end": "Anh Cường."
+  },
+  {
+    "id": "9",
+    "name": "Lâm Quang Tùng",
+    "image": "tung.lam.png",
+    "open": "Tùng thân mến,",
+    "body": "Chất lượng quyết định “ăn thua” ở những chỗ rất nhỏ: logic, assumption, độ tin cậy dữ liệu và độ chắc của giải pháp - nên cần người có tư duy sâu và kỹ. \n Tùng làm việc cẩn thận, suy nghĩ sâu, hay nhìn rủi ro và edge cases trước khi quyết. Các giải pháp n8n của Tùng được thiết kế chặt hơn, giảm lỗi phát sinh. \n Cảm ơn Tùng vì sự chỉn chu và chiều sâu - đó là “quality backbone” rất quý trong Insight Tech. Mong Tùng chia sẻ góc nhìn nhiều hơn trong các buổi review/ design để giúp team nâng chuẩn chung và ra quyết định tự tin hơn.",
+    "end": "Anh Khang."
+  },
+  {
+    "id": "10",
+    "name": "Lê Thảo Nguyên",
+    "image": "nguye.le6.png",
+    "open": "Nguyên thân mến,",
+    "body": "Nguyên giỏi chuyên môn phân tích data có thể làm việc trong môi trường áp lực cao. Nguyên duy trì độ tập trung tối đa vào các con số và hoàn thành task với tốc độ vượt trội. Nguyên không chỉ làm đủ, mà làm sâu, đảm bảo dữ liệu luôn có tính logic cao. \n Hiệu suất làm việc của Nguyên giúp team rút ngắn đáng kể thời gian xử lý data thô. Sự ổn định và khả năng chịu áp lực của Nguyên tạo ra sự an tâm tuyệt đối cho mình mỗi khi giao những dự án quan trọng và Nguyên khả năng lọc bỏ xao nhãng để hướng tới mục tiêu cuối cùng. Cảm ơn Nguyên vì luôn thôi thúc bản thân hoàn thành mục tiêu với tiêu chuẩn cao nhất. \n Mình ghi nhận và ủng hộ lộ trình thăng tiến của Nguyên. Với năng lực hiện tại, Nguyên đã là một Specialist xuất sắc. Bước tiếp theo trên con đường lên Lead, mong Nguyên hãy bắt đầu mở rộng vùng ảnh hưởng, hướng dẫn các bạn khác cách tư duy data nhanh như mình.",
+    "end": "Chị Hà."
+  },
+  {
+    "id": "11",
+    "name": "Lưu Thị Phương Thảo",
+    "image": "thao.luu.png",
+    "open": "Thảo thân mến,",
+    "body": "Năm qua Thảo bước ra khỏi vùng an toàn với dự án Transformation (AI & Research). Em không chỉ làm Research mà còn xông pha nhận vai trò BA, chủ động vẽ flow để Dev dễ triển khai. Đặc biệt, em không chấp nhận báo cáo ở mức đủ dùng mà đã nâng cấp nó thành công cụ chiến lược có USP và so sánh đối thủ. Nhờ tư duy rành mạch và sự cam kết của em, sản phẩm không chỉ launch đúng tiến độ (T1-T2) mà còn thiết lập một tiêu chuẩn chất lượng mới cao hơn hẳn cho team. \n Chị thấy rất rõ chất Maximizer (Tối ưu hóa) ở em – luôn tìm cách biến Good thành Great. Sự Responsibility (Trách nhiệm) của em là sự đảm bảo tuyệt đối cho dự án – đã hứa là làm và làm đến cùng. Song song là Developer và Positivity – em kiên nhẫn hướng dẫn và là cục sạc pin cho cả team những lúc căng thẳng nhất. \n Cảm ơn Thảo vì sự dấn thân và tích cực trong mọi hoàn cảnh. Chị hoàn toàn Tin tưởng (Trust) khi giao việc cho em và Tự hào vì em đã dám thay đổi. Với đà này, chị tin em sẽ còn tiến xa khi làm chủ những dự án phức tạp hơn trong tương lai. Keep the Momentum!",
+    "end": "Chị Trâm Anh."
+  },
+  {
+    "id": "12",
+    "name": "Mang Anh Cường",
+    "image": "cuong.mang.png",
+    "open": "Anh Cường thân mến,",
+    "body": "2025, transformation, AI – những từ khóa nghe có vẻ khá “khó nhằn” với người già, như cách anh vẫn hay tự nhận về mình. Những buổi 1:1 đầy áp lực “cột sống”, những thời điểm tưởng chừng anh đã muốn bỏ cuộc. Nhưng rồi có một ngày, anh nói với em: “Anh học xong khoá AI for UX rồi.” Và thật sự, với em, đó là khoảnh khắc đánh dấu năm 2025 là năm chuyển mình của anh. \n Từ một người mà mỗi lần đụng đến công nghệ, mày mò tool là sẽ tìm cách giao lại cho “đám trẻ”, để anh được toàn tâm với nghiên cứu và niềm đam mê kết nối con người – anh đã dũng cảm bước ra khỏi vùng an toàn của mình. Từ việc gửi những email “spam” n8n đầu tiên cho em, đến việc tự ngồi ngâm cứu luồng ERP để làm sản phẩm – đó là những hình ảnh rất mới, rất khác của anh trong năm nay. \n Trước giờ em luôn biết anh giỏi quan hệ, nhưng chỉ đến khi hiểu rõ hơn về talent của anh, em mới thật sự hiểu vì sao anh có thể “trụ” ở MoMo lâu đến vậy, dù em đã yêu cầu đơn vị mình chuyển đổi không biết bao nhiêu lần. Đó là sự tích cực của anh trước mọi hoàn cảnh – một kiểu positive rất bền, rất thật. Em thực sự thấy biết ơn vì CIO có anh: một “chiến thần ngoại giao”, người kết nối, người khai sáng, và là cầu nối giúp CIO được nhiều người trong và ngoài tổ chức biết đến như hôm nay. \n Em hy vọng bước sang 2026, anh sẽ tiếp tục thừa thắng xông lên, tạo ra những thành tựu significant hơn nữa – không chỉ trong DTE mà cả ở hành trình UX mà anh đang dấn thân",
+    "end": "Chị Nhi."
+  },
+  {
+    "id": "13",
+    "name": "Ngô Quang Quyền",
+    "image": "quyen.ngo1.png",
+    "open": "Quyền thân mến,",
+    "body": "Chị trân trọng cách Quyền nhanh chóng hòa nhập với team và mang đến một tinh thần làm việc thoải mái, vui vẻ. Chị cũng rất cảm ơn sự tinh tế của em trong cách quan sát và quan tâm đến những người xung quanh. Em luôn chủ động hỗ trợ từ những chi tiết rất nhỏ, đôi khi không thuộc phần việc của mình — như lấy đồ ăn, sắp xếp ghế, bàn — nhưng lại tạo cho người khác cảm giác được quan tâm và tôn trọng. Chính sự cởi mở, tích cực và tinh tế đó góp phần tạo nên một trải nghiệm làm việc dễ chịu và gắn kết hơn. \n Chị cũng thấy rất rõ sự cố gắng của em trong việc học và nhanh chóng làm quen với công việc cũng như các tools mới. Em chủ động tìm hiểu, không ngại thử và sẵn sàng điều chỉnh để sử dụng công cụ ngày càng hiệu quả hơn. Đặc biệt, em lắng nghe feedback một cách cởi mở, ghi nhận và chuyển hóa thành những thay đổi tích cực trong công việc. Điều đó cho thấy tinh thần cầu tiến, sự nghiêm túc với việc học hỏi và mong muốn phát triển bản thân một cách bền bỉ. \n Chị mong em sẽ tiếp tục duy trì tinh thần tích cực này và có thêm nhiều bước tiến rõ ràng hơn trên chặng đường phía trước.",
+    "end": "Chị Tuyết."
+  },
+  {
+    "id": "14",
+    "name": "Nguyễn Ngọc Bảo Hân",
+    "image": "han.nguyen9.png",
+    "open": "Hân thân mến,",
+    "body": "Năm 2025 là một bước ngoặt bùng nổ của Hân. Em không chỉ không ngán loại Research nào (cân cả Quant, Qual & Desk) mà còn chủ động nạp thêm kiến thức mới để dấn thân vào dự án Second Brain. Em luôn đặt tiêu chuẩn hoàn thành trọn vẹn và chỉn chu nhất cho mọi task mình làm. Sự đa năng và tư duy hệ thống (Systems thinking) của Hân giúp BU luôn có những góc nhìn mới mẻ và sắc bén. Ownership của em thành kết quả thực tế: đúng deadline, chất lượng luôn đảm bảo. Việc em sẵn sàng hỗ trợ các members khác của team cũng là một USP (lợi thế cạnh tranh) giúp cả dự án có progress. \n Hân liên tục nạp kiến thức và hiện thực hóa thành kết quả. Thêm vào đó là Maximizer và Significance – em không làm cho xong, mà làm để tạo ra giá trị, để tối ưu hóa và để khẳng định dấu ấn cá nhân trong từng sản phẩm. \n Cảm ơn Hân vì một năm rực rỡ và nỗ lực học hỏi không ngừng nghỉ. Chị thực sự ấn tượng vì em đã chứng minh rằng: Giới hạn là để phá vỡ. Với nền tảng tư duy hệ thống và thái độ cân tất này, chị tin rằng năm tới em sẽ không chỉ là một người thực thi xuất sắc mà sẽ trở thành một Key Player dẫn dắt những dự án chiến lược lớn hơn. Keep shining!",
+    "end": "Chị Trâm Anh."
+  },
+  {
+    "id": "15",
+    "name": "Nguyễn Nhật Anh",
+    "image": "anh.nguyen82.png",
+    "open": "Anh thân mến,",
+    "body": "Nhật Anh mang đến một sự hồn nhiên rất riêng — chân thật, không gồng, không màu mè. Sự vô tư và có phần trẻ con của em tạo cảm giác rất thật khi tiếp xúc. \n Một điểm chị đặc biệt đánh giá cao ở em là cách em lắng nghe feedback rất trực diện và cầu thị. Em không biện minh hay phòng thủ, mà tiếp nhận thẳng thắn và nhanh chóng chuyển hoá thành hành động. Những thay đổi tích cực sau đó có thể thấy rõ, cho thấy em thực sự nghiêm túc với việc cải thiện bản thân chứ không chỉ dừng ở việc “nghe để đó”. \n Chị cũng nhìn thấy tinh thần không ngại khó của em. Khi công việc cần, em sẵn sàng ưu tiên hoàn thành cho bằng được, kể cả trong những điều kiện không thuận lợi như phải mở máy làm việc ngay bên lề đường. Điều đó thể hiện sự cố gắng và trách nhiệm với công việc. \n Chị kỳ vọng và muốn được nhìn thấy Nhật Anh phát triển nhanh và mạnh mẽ hơn nữa trong thời gian tới, và mong em luôn tiếp tục giữ được sự chân thật, tinh thần học hỏi và dám bứt phá.",
+    "end": "Chị Tuyết."
+  },
+  {
+    "id": "16",
+    "name": "Nguyễn Tiến Khoa",
+    "image": "khoa.nguyen.png",
+    "open": "Khoa thân mến,",
+    "body": "Làm Insight Tech nghĩa là luôn có “đường dài”: từ hiểu bài toán, support stakeholder, đến xây/ duy trì hệ thống - tool - quy trình; cái khó là làm bền và làm đúng. \n Khoa rất siêng năng, chịu khó support, sẵn sàng nhận phần việc khó và có tinh thần tìm tòi học hỏi để làm cho ra gốc rễ, không chỉ xử lý phần ngọn. Nhờ Khoa, nhiều đầu việc được đẩy đi chắc tay hơn, team có thêm người “gánh” được việc phức tạp, giảm rủi ro vận hành và tăng độ ổn định của giải pháp/ flow. \n Cảm ơn Khoa vì sự bền bỉ và tinh thần “đã nhận là làm tới”. Mong Khoa tiếp tục đi sâu vào domain Insight Tech (tooling/ automation/ data) để impact ngày càng rõ ràng và có thể dẫn dắt một mảng nhỏ trong thời gian tới.",
+    "end": "Anh Khang."
+  },
+  {
+    "id": "17",
+    "name": "Phạm Lê Thanh Hà",
+    "image": "ha.pham.png",
+    "open": "Hà thân mến,",
+    "body": "Bước sang hành trình 2025, khi CIO không chỉ cần làm tốt research mà còn cần những người đủ vững để dẫn dắt con người ở những khía cạnh transform, khiến 2025 trở thành một cột mốc rất đặc biệt với Hà ở vai trò quản lý. Trước đây, khi quan sát Hà làm việc với các bạn trong team, chị từng có những băn khoăn rằng liệu Hà đã sẵn sàng để trở thành một leader hay chưa. Và rồi, chính năm 2025 đã cho chị câu trả lời rõ ràng nhất. \n Trong vai trò quản lý, Hà thể hiện mình là một người leader đáng tin cậy – không chỉ tạo điều kiện để nhân viên có cơ hội thể hiện bản thân, mà còn trở thành một “người chị, người bạn” mà team có thể tìm đến cả trong công việc lẫn cuộc sống. Khi quan sát Hà làm việc với stakeholders, chị nhiều lần tự hỏi vì sao Hà và các stakeholders có thể nhanh chóng trở nên thân thiết đến vậy. Và rồi chị đã “wow” khi nhận ra rằng điều đó đến rất tự nhiên: Hà sở hữu một bộ talent về relationship cực kỳ mạnh, nơi mọi sự kết nối diễn ra như “hữu xạ tự nhiên hương”. Chính cách Hà xây dựng mối quan hệ và tạo ảnh hưởng đã giúp các kết quả nghiên cứu đạt được sự đồng thuận một cách rất trọn vẹn. \n Ở khía cạnh trách nhiệm, Hà luôn là một điểm tựa đáng tin cậy. Dù khối lượng công việc lớn, Hà vẫn đảm bảo chất lượng và tiến độ, mang lại kết quả tốt đúng thời điểm. Sự ổn định và bền bỉ này làm nên một Hà được tin cậy bởi stakeholders, bởi cấp trên (là chị đó, hehe) và bởi chính đội ngũ của mình, không chỉ trong công việc mà cả ở khía cạnh con người. \n Chị rất trân trọng hành trình trưởng thành của Hà trong năm 2025, một hành trình mà chính Hà đã chứng minh rằng mình hoàn toàn sẵn sàng cho vai trò leader. Bước sang 2026 với vai trò mới, chị kỳ vọng Hà sẽ trở thành một hạt nhân quan trọng, góp phần lan tỏa tinh thần kết nối và thúc đẩy những sáng kiến mới trong hành trình phục hưng của CIO ",
+    "end": "Chị Nhi."
+  },
+  {
+    "id": "18",
+    "name": "Phạm Thị Ánh Tuyết",
+    "image": "tuyen.pham.png",
+    "open": "Tuyết thân mến,",
+    "body": "Chị thật sự biết ơn Tuyết vì đã luôn ở bên cạnh chị trong cả những giai đoạn thuận lợi lẫn những lúc khó khăn nhất. Có những thời điểm chị rơi vào trạng thái ngợp và mệt mỏi vì áp lực công việc và trách nhiệm, và chính sự lắng nghe, chia sẻ rất chân thành của Tuyết đã giúp chị có thêm điểm tựa để đi tiếp. Khi Tuyết quay trở lại làm việc, em không chỉ phải học lại và học thêm rất nhiều điều mới trong công việc, mà còn đồng thời đảm đương một vai trò hoàn toàn mới và đầy thử thách là làm mẹ. Trong bối cảnh đó, Tuyết vẫn giữ cho mình tinh thần trách nhiệm cao, nỗ lực thích nghi và hoàn thành công việc một cách nghiêm túc. Sự hiện diện và đóng góp của em đã giúp team dần ổn định hơn, và giúp chị thoát khỏi cảm giác phải gồng mình xử lý mọi thứ một mình. Từ góc nhìn của chị, em sở hữu một tiềm năng rất lớn, vượt xa những gì em đang tự nhìn nhận. Chị tin rằng nếu tiếp tục tin vào chính mình, Tuyết có thể phát triển và tỏa sáng ở bất kỳ đâu.",
+    "end": "Chị Phương."
+  },
+  {
+    "id": "19",
+    "name": "Trần Minh Khang",
+    "image": "khang.tran5.png",
+    "open": "Khang thân mến,",
+    "body": "Trong suốt hành trình gần một năm tìm kiếm nhân sự phụ trách sản phẩm cho CIO, chị đã phỏng vấn không ít, cũng có những ứng viên đi đến vòng offer, nhưng Khang là người hiếm hoi mà chỉ cần đọc CV thôi là đã thấy chạm, chạm từ cách suy nghĩ đến cách tiếp cận công việc. \n Buổi phỏng vấn hôm đó, Khang là ứng viên duy nhất mang theo sự chuẩn bị nghiêm túc cho bài toán 2H. Khang cũng là người sẵn sàng quay về phát triển tiếp yêu cầu của chị dù trăm công nghìn việc, và còn  trì đồng hành cùng CIO qua thêm ba vòng phỏng vấn để có thể cùng nhau xây dựng một sản phẩm mang vision dài hạn, không chỉ cho hiện tại mà cho ít nhất ba năm tới. \n Chỉ sau ba tuần làm việc cùng nhau, chị đã nhìn thấy rất rõ sự quan tâm chân thành của Khang dành cho nhân viên, sự cầu toàn trong từng sản phẩm, và một tinh thần maximizer rất tự nhiê,  không chỉ cho team, cho bản thân, cho sếp, mà cho cả bất kỳ ai nằm trong network mà Khang chạm tới. Những gì Khang làm là sự kết hợp rất đẹp giữa nghệ thuật và tư duy strategic, tạo nên một màu sắc mới khi ghép vào CIO. \n Chị tin rằng sự hiện diện của Khang sẽ góp phần quan trọng trong hành trình phục hưng CIO và giúp tổ chức này tạo ra impact lớn hơn nữa trong thời gian tới. Mong rằng 2026 sẽ là một năm thật rực rỡ với Khang và nhớ là maximize sếp hết cỡ luôn nha.",
+    "end": "Chị Nhi."
+  },
+  {
+    "id": "20",
+    "name": "Trần Ngọc Quyên",
+    "image": "quyen.tran.jpg",
+    "open": "Quyên thân mến,",
+    "body": "Năm qua CIO chuyển hướng sang các dự án High Impact với dữ liệu phức tạp hơn hẳn. Chị đánh giá rất cao cách Quyên xử lý các dự án Quali với tư duy cực kỳ mạch lạc. Tuy nhiên, chị bất ngờ nhất lại là sự sáng tạo của em ở dự án Second Brain. Em đã không làm theo lối mòn mà thực sự trăn trở khi làm Comm Plan một cách mới mẻ để làm nổi bật tính năng sản phẩm. \n Sự kết hợp giữa tư duy phân tích và cách tiếp cận sáng tạo của Quyên đã giúp các output của có nhiều mới mẻ và dễ tiếp nhận. Em hoàn thành tốt 6 dự án (gồm 2 dự án High Impact) và góp phần quan trọng giúp team đạt KPI, đồng thời mang lại các suy nghĩ mới về việc làm branding sản phẩm \n Kết hợp giữa Analytical (Phân tích) – sự chặt chẽ khi xử lý dữ liệu và Ideation (Ý tưởng) – sự sáng tạo khi em luôn tìm tòi cách thể hiện mới (như trong Comm Plan). Cuối cùng là Responsibility (Trách nhiệm), giúp em hiện thực hóa mọi ý tưởng thành kết quả đúng hạn. \n Cảm ơn Quyên đã mang đến một làn gió mới cho team, ít người mà chị biết vừa có khả năng phân tích logic mà vừa có sự sáng tạo, bay bổng để làm comm như em. Năm tới, hãy tiếp tục dùng thế mạnh Ideation này để đề xuất những phương pháp nghiên cứu mới hoặc những cách báo cáo đột phá hơn nữa nhé. Keep Evolving!",
+    "end": "Chị Trâm Anh."
+  },
+  {
+    "id": "21",
+    "name": "Trần Thị Thanh Hằng",
+    "image": "hang.tran6.png",
+    "open": "Hằng thân mến,",
+    "body": "Quanti là một mảng khó, dễ khiến mọi người nản nếu không có ai đủ kiên nhẫn để dẫn dắt. Và chị thấy Hằng chính là “cô giáo tận tâm” của The 5ive trong mảng này. Chị quan sát thấy em luôn sẵn sàng hướng dẫn, giải thích lại từ những nền tảng cơ bản nhất, và cho lời khuyên rất thực tế để mọi người không chỉ làm được mà còn hiểu đúng quanti. Em luôn chủ động chia sẻ kiến thức, góp phần nâng mặt bằng chung của team. \n Điều chị trân trọng nữa là tinh thần trách nhiệm của em. Dù nhiều lúc em nói là “không muốn làm”, nhưng em luôn cố gắng hoàn thành ở mức tốt nhất — kể cả phải ở lại đến tối muộn hoặc làm việc cuối tuần. Không phải vì bị ép, mà vì em không cho phép mình làm qua loa. \n Chị nhìn thấy rõ ở em nền tảng quanti chắc chắn, ownership cao, sự hào phóng trong chia sẻ kiến thức và một tinh thần bền bỉ với chất lượng công việc. \n Cảm ơn em vì sự tận tâm và cố gắng thầm lặng. Chị tin rằng career path phía trước của Hằng còn rất nhiều room để tạo impact lớn hơn — tương xứng với năng lực và tinh thần trách nhiệm mà em đang có.",
+    "end": "Chị Tuyết."
+  },
+  {
+    "id": "22",
+    "name": "Trần Tiểu My",
+    "image": "TIỂU MY.png",
+    "open": "My thân mến,",
+    "body": "Ops là công việc mà khi làm tốt thì ít ai để ý, vì mọi thứ “tự nhiên chạy”. Đôi khi điều đó khiến em cảm giác vai trò của mình chưa được nhìn thấy đủ. \n Anh quan sát thấy em là người “giữ nhịp” cho team: nhắc việc rất khéo (không làm người khác khó chịu), follow-up đến cùng, và khi có sự cố thì em đứng ra xử lý bình tĩnh để cả team yên tâm làm chuyên môn. Em cũng rất tinh tế khi làm việc với user/CTV, luôn giữ sự tôn trọng và tạo cảm giác dễ hợp tác. \n Nhờ vậy, vận hành ổn định hơn, team giảm friction, và trải nghiệm user/CTV được đảm bảo. \n Anh thấy rõ Communication (truyền đạt rõ ràng, đúng người-đúng lúc), Empathy (nhạy với cảm xúc và nhu cầu của user/CTV/đồng đội), và Adaptability (linh hoạt xử lý thay đổi và sự cố). Thêm nữa là Positivity/Includer khi em giữ năng lượng tích cực và kết nối mọi người. \n Cảm ơn em vì sự bền bỉ và tử tế. Anh tin khi team đi sâu vào automation và transformation, em sẽ tạo impact còn lớn hơn nữa vì em đang có đúng “chất” để dẫn nhịp cho thay đổi.",
+    "end": "Anh Cường."
+  },
+  {
+    "id": "23",
+    "name": "Trần Văn Tuấn",
+    "image": "tuan.tran5.png",
+    "open": "Tuấn thân mến,",
+    "body": "Transformation, AI, Innovation – chỉ cần nhìn theme của 2025 thôi là chị đã biết: năm nay Tuấn sẽ tỏa sáng, đúng không? Nhiều lúc chị cảm thấy mình nói vẫn chưa đủ, nhưng thật lòng mà nói, nếu không có Tuấn, chị không chắc mình đã có thể đi tiếp trọn vẹn hành trình này. Và đúng như vậy, sau mùa CBMC năm ngoái, 2025 là năm Tuấn lột xác chính mình – và lột luôn cả CIO 😄 \n Tuấn luôn là nguồn cảm hứng vô tận cho CIO trong việc ngâm cứu, tìm tòi những điều mới. Nhưng với Tuấn, học không phải để đó, mà là phải ra việc thật, giải quyết vấn đề thật – và bằng một cách rất “bí ẩn”, mọi thứ Tuấn chạm vào đều giúp quy trình của CIO trở nên cập nhật và sắc nét hơn. \n Khi làm platform 2H, bằng một niềm tin rất bản năng, chị đặt trọn niềm tin vào trách nhiệm, tinh thần learner, cùng các talents Achiever, Restorative, Self-Assurance, Deliberative và Focus của Tuấn, để em “tự thân tự diễn” toàn bộ platform. Và rồi, niềm tin đó đã không đặt sai chỗ – đúng không Tuấn? \n Những nỗ lực của em trong năm 2025 không chỉ giúp em dấn thân vững vàng vào một con đường hoàn toàn mới – đúng với ước mơ của mình – mà còn mở ra cho CIO thêm rất nhiều cơ hội để làm những điều bùng nổ hơn nữa trong 2026. \n Một năm khép lại thật trọn vẹn. Chị mong Tuấn sẽ tiếp tục bùng nổ trong chặng đường sắp tới, nhưng nhớ là lâu lâu hãy chậm lại một chút, cho mình thời gian chiêm nghiệm, khen mình một xíu, để có đủ không gian yêu bản thân, yêu những người yêu mình và tận hưởng niềm vui của những gì mình đã đạt được nha",
+    "end": "Chị Nhi."
+  },
+  {
+    "id": "24",
+    "name": "Trương Võ Thiện Nhân",
+    "image": "nhan.jpg",
+    "open": "Nhân thân mến,",
+    "body": "Trong đội ngũ ICU Nhân luôn đối mặt với những request hóc búa, từ trên trời rơi xuống và các công nghệ hoàn toàn mới. Thay vì chờ đợi hướng dẫn, Nhân chủ động tự lập, tự nghiên cứu và biến những yêu cầu mơ hồ thành kết quả thực tế. Sự tự chủ của Nhân giúp team luôn vận hành trơn tru mà không cần micro-manage. Nhân không chỉ deliver kết quả vượt mong đợi mà còn giữ vững 100% cam kết về timeline. Đặc biệt, những content hài hước của Nhân đã giúp xóa tan áp lực, tạo nên một không khí làm việc tích cực cho cả team.  \n Nhân có khả năng tự vận hành và giải quyết vấn đề độc lập cực kỳ tốt. Chị ghi nhận Nhân có đam mê khám phá cái mới, sẵn sàng học và làm tốt cả những mảng chưa từng tiếp xúc, luôn đúng hẹn, là điểm tựa tin cậy cho mọi deadline. \n Chị mong Nhân sẽ phát huy tinh thần lạc quan và khả năng kết nối mọi người bằng sự hài hước nhé.",
+    "end": "Chị Hà."
+  },
+  {
+    "id": "25",
+    "name": "Võ Thị Thúy Hiền",
+    "open": "Chị Hiền thân mến,",
+    "body": "Team thường xuyên xử lý các yêu cầu chuyên môn phức tạp, đòi hỏi tốc độ và độ chính xác cao để vượt qua các điểm nghẽn kỹ thuật. Chị Hiền thể hiện bản lĩnh của một chuyên gia vững vàng: xử lý request nhanh, chuẩn xác và nắm bắt vấn đề sắc bén. Chị không chọn cách phát biểu ồn ào mà âm thầm quan sát; khi đồng nghiệp gặp khó, chị chủ động hỗ trợ trực tiếp bằng cách làm mẫu hoặc hướng dẫn thực tế để đảm bảo tiến độ. \n Sự hiện diện của chị giúp dòng chảy công việc luôn trôi chảy. Chị là điểm tựa chuyên môn đáng tin cậy, tạo sự an tâm tuyệt đối cho đội ngũ nhờ sự hỗ trợ chất lượng và kịp thời. Chuyên môn sâu giúp xử lý việc nhanh, chính xác; luôn chủ động gánh vác trách nhiệm chung. Chị tinh tế nhận ra khó khăn của người khác để giúp đỡ chân thành, xây dựng niềm tin bằng hành động thực tế. \n Em rất trân trọng phong thái nói ít – làm nhiều và hiệu suất ấn tượng của chị. Năm tới, hy vọng chị tiếp tục duy trì phong độ và bắt đầu chia sẻ các bí kíp làm việc hiệu quả của mình để giúp nâng tầm năng lực cho cả team.",
+    "end": "Hà."
+  },
+  {
+    "id": "26",
+    "name": "Hồ Đoan Phương",
+    "image": "phuong.ho.png",
+    "open": "Chị Phương thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "27",
+    "name": "Nguyễn Kim Xuân Nguyên",
+    "image": "nguyen.nguyen.png",
+    "open": "Chị Nguyên thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "28",
+    "name": "Nguyễn Văn Hoài Trung",
+    "image": "trung.nguyen.png",
+    "open": "Anh Trung thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "29",
+    "name": "Ô Gia Hân",
+    "image": "han.o.png",
+    "open": "Chị Hân thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "30",
+    "name": "Nguyễn Ngọc Thùy Khanh",
+    "image": "khanh.nguyen.png",
+    "open": "Chị Khanh thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "31",
+    "name": "Đỗ Quang Thuận",
+    "open": "Anh Thuận thân mến,",
+    "body": "Trong một năm CIO có nhiều chuyển mình mạnh mẽ, như anh từng nói: “Công việc tụi em làm bây giờ không giống bất cứ điều gì CIO làm hồi 2024.” Và thực tế, CIO sẽ không thể đi xa đến vậy nếu thiếu đi sự chỉ đạo, những câu hỏi thách thức và sự ủng hộ thầm lặng từ anh. \n Anh bắt đầu bằng một đề bài rất khó: CIO cần giảm 50% nguồn lực research, buộc đơn vị rơi vào thế lưỡng nan và phải thay đổi toàn bộ bộ kỹ năng để thích ứng với làn sóng AI. Từ đó, các bạn researcher học thêm design, content, tự code web; quy trình yêu cầu nghiên cứu, thu thập và phản hồi insight đều được điều chỉnh và tái thiết kế dưới sự chỉ đạo của anh. \n Trong quá trình được làm việc cùng anh, em cảm nhận rất rõ anh là một lãnh đạo đầy nhiệt huyết và có tầm nhìn chuyển đổi mạnh mẽ. Anh dành thời gian để challenge mọi cách làm hiện tại, đầu tư vào việc tuyển đúng người, giao đúng thách thức và chủ động tìm kiếm, phát triển talent. Anh cũng dành thời gian để hiểu thế mạnh của từng nhân sự trong CIO và khuyến khích em tiếp tục tạo thêm những bài toán mới để các bạn được phát triển. Bên cạnh đó, anh luôn rộng mở cơ hội cho CIO tham gia các giải thưởng của phòng ban, hỗ trợ nguồn lực ITC để tháo gỡ các bottleneck công nghệ, tạo điều kiện để Second Brain có thể thực sự “ra đường”. \n Nhờ sự đồng hành đó, CIO đã có một sự lột xác rõ rệt: tạo ra nhiều giá trị hơn cho tổ chức, mở ra thêm nhiều cơ hội phát triển cho đội ngũ bên dưới. Các dự án được triển khai mượt mà hơn, giảm friction giữa các bên, và insight cũng như giải pháp của CIO bám sát nhu cầu thực tế hơn, từ đó tạo ra tác động cụ thể cho sản phẩm và vận hành tại MoMo. \n Em tin rằng anh là một lãnh đạo có khả năng tạo ảnh hưởng và mang lại significant impact. Và em thực sự tin rằng dưới sự dẫn dắt của anh, CIO sẽ còn tiếp tục chuyển mình mạnh mẽ hơn nữa. \n Chúc anh một năm 2026 thật rực rỡ và tiếp tục tỏa sáng như cách anh đã giúp CIO toả sáng trong 2025. ",
+    "end": "CIO Team."
+  },
+  {
+    "id": "32",
+    "name": "Nguyễn Linh Trang",
+    "open": "Chị Trang thân mến,",
+    "body": "Đằng sau sự chuyển mình mạnh mẽ của CIO là niềm tin và sự đồng hành bền bỉ từ Trang và SPS. CIO không thể đi xa đến vậy nếu thiếu sự tin tưởng và hỗ trợ kịp thời từ Trang, từ việc chia sẻ dữ liệu merchants, ủng hộ các sản phẩm mới, đến việc trực tiếp giới thiệu sản phẩm của CIO, đọc và áp dụng các báo cáo nghiên cứu. Trang cũng thường xuyên đồng hành cùng CIO với vai trò giám khảo và diễn giả, góp phần kết nối insight với bài toán thực tiễn và nâng tầm giá trị CIO trong tổ chức. \n Trang luôn toát ra một nguồn năng lượng tích cực và sự chỉnh chu rất rõ nét trong mọi sản phẩm mình làm, từ những bản kế hoạch năm dài (vâng rất dài) và chi tiết, đến cách tổ chức các cuộc thi và sự kiện nội bộ của SPS. Trang là nguồn cảm hứng cho business head ở sự bền bỉ và quyết liệt trong các dự án lớn, đồng thời cũng mang lại tinh thần hứng khởi cho đội ngũ qua những hoạt động gắn kết, từ các trận “quậy banh panda” cho đến sân khấu Offsite hay M15. \n Những buổi họp business của SPS đôi khi truyền cảm hứng, đôi khi tạo áp lực, nhưng CIO tin rằng chính phong cách lãnh đạo đó đã góp phần quan trọng giúp SPS đạt được những kết quả tích cực, từ Offline Payment trước đây cho đến Soundbox ở hiện tại. CIO cũng trân trọng việc Trang luôn gần gũi, chia sẻ với các thành viên CIO về quản lý, về cơ hội phát triển, và thường xuyên đồng hành cùng CIO trong các hoạt động chung như CBMC. \n CIO thật sự biết ơn sự tin tưởng, nâng đỡ và ủng hộ cả về tinh thần lẫn tài chính (😛) mà Trang dành cho CIO. Hình ảnh Trang, một người lãnh đạo giỏi, một “vận động viên đa môn” xuất sắc, một diễn giả duyên dáng và một đồng nghiệp đáng tin cậy, luôn là nguồn cảm hứng để đội ngũ CIO nỗ lực hơn mỗi ngày. \n Chúc cho năm 2026 của Trang và của SPS thật rực rỡ. Và như Trang đã biết, bất cứ khi nào SPS cần, CIO luôn sẵn sàng đồng hành và hỗ trợ trong mọi “trận đánh”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "33",
+    "name": "Lương Kim Thanh",
+    "image": "Lương Kim Thanh.jpg",
+    "open": "Chị Thanh thân mến,",
+    "body": "CIO tin rằng mối nhân duyên giữa CIO và Social Payment không bắt đầu từ một dự án cụ thể, mà từ niềm tin rất rõ ràng của chị vào vai trò trung tâm của người dùng trong phát triển sản phẩm. \n Từ khi gia nhập MoMo, chị Thanh luôn là một trong những stakeholder đồng hành sâu và bền bỉ nhất với CIO. Chị chủ động đầu tư và bổ sung năng lực nghiên cứu cho team Social Payment, đồng thời kết nối product, design và dev cùng tham gia các buổi nghiên cứu, giúp rút ngắn khoảng cách từ insight đến solution ra thị trường. Trong một năm CIO chuyển mình từ mô hình chuyên gia sang vai trò người hướng dẫn và đồng hành cùng business, Social Payment cũng là một trong những đội sử dụng hiệu quả nhất các dịch vụ self-served của CIO, tham gia đầy đủ các chương trình đào tạo và tiếp tục đặt ra những đề bài nghiên cứu mang tính chiến lược. \n Trong hành trình tạo ra những báo cáo và giải pháp có impact thực sự cho business, sự đồng hành của chị Thanh đóng vai trò đặc biệt quan trọng. Chị không chỉ ủng hộ về nguồn lực tài chính, mà còn chủ động chia sẻ các bài toán business, mở ra những dự án cụ thể để CIO có thể đi đến tận cùng vấn đề. Nhờ đó, các kết quả nghiên cứu được áp dụng triệt để, tạo ảnh hưởng rõ ràng lên business, giúp CIO được ghi nhận đúng giá trị và đảm bảo đội ngũ không ai bị bỏ lại phía sau. \n Chị Thanh sở hữu bộ talent rất mạnh về Influence và Relationship, tạo ra một nguồn năng lượng kết nối khiến mọi người sẵn sàng đồng hành để cùng đạt mục tiêu chung. Chính năng lượng đó cũng kéo CIO bước sâu hơn vào hành trình Social Payment – từ các bài toán nhận tiền, Titan, quỹ nhóm cho đến những cơ hội lớn hơn trong tương lai. CIO rất trân trọng sự đồng hành này và mong được tiếp tục cùng chị Thanh và Social Payment chinh phục thêm nhiều dự án mới, tạo ra impact ngày càng lớn cho tổ chức.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "34",
+    "name": "Vũ Hương Thảo",
+    "image": "Hương Thảo.png",
+    "open": "Chị Thảo thân mến,",
+    "body": "Với CIO, Thảo là Giám đốc Marketing đầu tiên không chỉ tin vào insight, mà còn trực tiếp dạy CIO cách biến insight thành action và thành kết quả kinh doanh thực sự. Không dừng ở việc đọc báo cáo hay tham khảo nghiên cứu, Thảo là người đầu tiên cùng CIO đi trọn hành trình từ hiểu người dùng đến ra quyết định, ra sản phẩm và ra con số. \n Từ khi có Thảo, các sản phẩm của BMC chứng kiến sự thay đổi vượt bậc, rõ ràng hơn về định hướng, táo bạo hơn về sáng tạo và sắc nét hơn về tư duy chiến lược. CIO đặc biệt enjoy những buổi brainstorm cùng BMC, nơi insight không nằm trên giấy mà được mổ xẻ thành logic, mục tiêu và hành động cụ thể, từ rebrand, VTS cho đến 2H. Chính những phiên làm việc đó đã giúp CIO học được một điều rất quan trọng: insight chỉ thật sự có giá trị khi nó tạo ra ảnh hưởng đến business. \n Trong những dịp chị Nhi được làm việc và đồng hành cùng Thảo tại Offsite và M15, điều đọng lại rất rõ là sự chỉnh chu, cầu toàn và khát khao tạo ra khác biệt. Cách Thảo kiên trì theo đuổi mục tiêu, sẵn sàng thay đổi những cách làm quen thuộc, thậm chí thách thức các quyết định ở cấp cao để vừa đáp ứng kỳ vọng rất cao của lãnh đạo, vừa tạo ra những sản phẩm hay ho, thú vị và mang dấu ấn riêng, đó là phong cách lãnh đạo rất đặc trưng của Thảo. \n CIO cũng rất trân trọng việc Thảo luôn chủ động lan tỏa và promote các sản phẩm của CIO, từ việc khuyến khích nhân viên tham gia, xây dựng bộ mini brand cho CIO, đến việc cùng đội ngũ nhân bản công nghệ website hay hợp tác phát triển các mô hình self-served. Những hành động đó không chỉ giúp CIO tạo impact lớn hơn, mà còn lan tỏa tinh thần đổi mới và sáng tạo trong toàn MoMo. \n Với vai trò là đội ngũ nghiên cứu, CIO luôn mong muốn và sẵn sàng tiếp tục đồng hành sâu hơn cùng BMC. Và ở vai trò truyền thông nội bộ, CIO cũng mong được tiếp tục học hỏi và được truyền cảm hứng từ Thảo, người đã giúp CIO nâng chuẩn tư duy từ “có insight” sang “tạo ra ảnh hưởng thật cho business” trong hành trình phát triển của MoMo.,",
+    "end": "CIO Team."
+  },
+  {
+    "id": "35",
+    "name": "Đỗ Thị Quỳnh An",
+    "image": "Quỳnh An.png",
+    "open": "Chị An thân mến,",
+    "body": "CIO thật sự biết ơn khi có một đội HRBP quá xịn đồng hành trong giai đoạn transform 2025 vừa qua, từ việc cùng dựng org chart, đi xin headcount, cho đến đẩy process chạy rần rần để mọi thứ không bị chững lại giữa lúc thay đổi liên tục. \n Trong quá trình đồng hành cùng chị, CIO cảm nhận rất rõ vai trò của HRBP như một người đồng kiến tạo, giúp những suy nghĩ còn đang rời rạc của CIO được hệ thống lại, rõ ràng hơn và có thể đưa vào triển khai thực tế. Ở những giai đoạn CIO bước vào môi trường mới, làm việc với sếp mới, HRBP luôn hiện diện để cùng góp ý, soi chiếu và đồng hành rất sát, giúp CIO tự tin hơn trong từng bước chuyển mình. \n Nhờ sự chuẩn bị kỹ lưỡng và dẫn dắt bài bản của chị, chương trình StrengthsFinder đã được triển khai một cách trọn vẹn: từ thiết kế chương trình, tổ chức lớp học đến kết nối với giảng viên phù hợp. Phần của CIO khi đó chỉ đơn giản là đến lớp và làm bài tập, nhưng giá trị mang lại thì vượt xa kỳ vọng. Chương trình đủ hay, người dạy đủ giỏi và quan trọng nhất là áp dụng được thật, đến mức giờ đây CIO đã có thể dùng chung ngôn ngữ strengths để nói chuyện, hiểu nhau và làm việc hiệu quả hơn mỗi ngày. \n Không biết từ lúc nào, chị An đã trở thành HRBP mà CIO có thể tìm đến khi “cần cứu”, hoặc đơn giản là khi có một ý tưởng gì đó hay ho muốn chia sẻ. Cảm giác có những người vừa hiểu con người, vừa hiểu hệ thống, lại luôn sẵn sàng đứng cạnh team trong những thời điểm quan trọng – điều đó thực sự rất quý. \n 2025 là năm chào sân và làm quen, nhưng mình đã cùng nhau làm được quá trời thứ. Hy vọng sang 2026, chị sẽ chính thức trở thành “người nhà toàn phần” của CIO, để cùng nhau làm thêm thật nhiều dự án hay ho, góp phần nâng cao môi trường làm việc và trải nghiệm cho đội ngũ CIO nói riêng và MoMo nói chung nha 🤍",
+    "end": "CIO Team."
+  },
+  {
+    "id": "36",
+    "name": "TrầN Thị Thảo Nguyên",
+    "image": "Thảo Nguyên.png",
+    "open": "Chị Nguyên thân mến,",
+    "body": "CIO thật sự biết ơn khi có một đội HRBP quá xịn đồng hành trong giai đoạn transform 2025 vừa qua. \n Trong hành trình đó, CIO rất trân trọng Nguyên — một cô bé năng động, nhiệt tình và lúc nào cũng hay cười. Nguyên không chỉ hỗ trợ theo đúng “vai trò HRBP”, mà còn mang đến cảm giác dễ gần và tích cực, luôn tràn đầy năng lượng. Có những lúc CIO cần một người vừa hiểu bối cảnh, vừa sẵn sàng đứng cạnh để gỡ rối và đưa ra gợi ý thực tế, Nguyên luôn có mặt đúng lúc - nhanh, rõ, và rất có tâm. \n Đặc biệt, trong chương trình StrengthsFinder, Nguyên đã hỗ trợ cực kỳ sát sao: từ khâu chuẩn bị, kết nối, tổ chức đến theo dõi để mọi thứ chạy mượt. Nhờ vậy, CIO không chỉ “tham gia cho có” mà thật sự học được, áp dụng được, và dần có chung một ngôn ngữ để hiểu nhau và làm việc hiệu quả hơn mỗi ngày. \n Cảm ơn Nguyên vì sự đồng hành ấm áp, vì năng lượng tích cực và tinh thần support hết mình. Hy vọng sang 2026, Nguyên tiếp tục là “người nhà” của CIO để mình cùng nhau làm thêm thật nhiều dự án hay ho, giúp đội ngũ ngày càng mạnh hơn và vui hơn nha",
+    "end": "CIO Team."
+  },
+  {
+    "id": "37",
+    "name": "NguyễN Huy Vũ",
+    "image": "Nguyễn Huy Vũ.png",
+    "open": "Anh Vũ thân mến,",
+    "body": "Trong một năm mà ưu tiên thay đổi liên tục và bài toán ngày càng phức tạp, CIO không thể đi xa nếu thiếu sự đồng hành từ anh. Những gì CIO làm được luôn có một phần đến từ sự tin tưởng, phối hợp và hỗ trợ kịp thời từ anh. \n Anh Vũ đã luôn dành thời gian lắng nghe, chia sẻ bối cảnh, cùng CIO “clarify” bài toán cho đúng, hỗ trợ tháo gỡ khi cần thiết và tạo điều kiện để CIO có dữ liệu/ nguồn lực/ đầu mối phù hợp để chạy nhanh mà vẫn giữ chất lượng. Không chỉ hỗ trợ công việc, anh còn hào phóng chia sẻ kinh nghiệm quản trị, bài học thực chiến và những góc nhìn giúp CIO trưởng thành hơn. \n Nhờ sự đồng hành đó, nhiều dự án được triển khai mượt hơn, giảm friction giữa các bên, và insight/ giải pháp của CIO bám sát nhu cầu thực tế hơn - tạo ra tác động rõ ràng cho sản phẩm và vận hành tại MoMo. \n CIO thật sự trân trọng sự tin tưởng và sự nâng đỡ của anh dành cho CIO trong suốt thời gian qua. Cảm ơn anh vì đã đồng hành và “mentor” đúng lúc. Mong năm tới CIO tiếp tục được làm việc sát cánh cùng anh nhiều hơn, chủ động hơn, và mang lại nhiều value hơn cho user và cho MoMo.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "38",
+    "name": "Vũ Thị Thu Hương",
+    "image": "thu.huong.png",
+    "open": "Chị Hương thân mến,",
+    "body": "Từ thời CIO và CDO còn là một đội ở MBI, Hương đã là một người bạn rất thân thiết với CIO - một manager có kinh nghiệm, tài giỏi và làm việc với sự điềm tĩnh đáng tin. Hương không phải kiểu “ồn ào”, nhưng mỗi lần lên tiếng đều có trọng lượng: sâu sắc, tinh tế, và thường nhìn vấn đề theo hướng rất rõ gốc rễ. Mình cũng rất thích một “màu” rất riêng của Hương: ít nói hơn, thích chơi với nhóm bạn nhỏ, nhưng bên trong lại giàu cảm xúc - nhất là khi xem clip Hương đàn tranh, mình luôn cảm thấy đó là một nét đẹp rất đặc biệt.  \n Cảm ơn Hương vì sự đồng hành bền bỉ từ những ngày đầu, vì những lần support lặng lẽ mà hiệu quả, và vì đã là một điểm tựa rất “chắc” cho CIO trong những đoạn cần sự tỉnh táo và chiều sâu. Mong 2026 mình vẫn giữ được sự gắn kết này và có thêm nhiều dự án để cùng nhau làm thật tốt.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "39",
+    "name": "Trần Nhơn Nghĩa",
+    "image": "Trần Nhơn Nghĩa.png",
+    "open": "Anh Nghĩa thân mến,",
+    "body": "Từ rất lâu Nghĩa đã là một người bạn rất thân của CIO - kiểu bạn mà hễ gặp là thấy “ổn rồi, có đồng minh ở đây”. Nghĩa là manager có kinh nghiệm, làm việc chắc tay và đầu óc rất sắc: nói chuyện data với Nghĩa luôn ra đúng ý, đúng trọng tâm, và thường giúp CIO gỡ được những đoạn “kẹt” nhanh hơn hẳn. \n Nhưng điều làm Nghĩa trở nên đặc biệt (và… nguy hiểm theo cách dễ thương) là khả năng kéo mood cả phòng. Bạn vui tính, hài hước, hay có mấy câu one-liner đúng lúc khiến mọi người vừa cười vừa tỉnh ra: “à đúng rồi, mình đang căng quá”. Có những ngày họp dài, timeline sát, ai cũng lừ đừ, chỉ cần Nghĩa quăng một câu nhẹ thôi là không khí đổi ngay - team thở được, rồi lại chiến tiếp. Nghĩa giống như kiểu “động cơ phụ” của tinh thần: không cần ồn ào quá, nhưng lúc cần là bật lên, kéo cả nhóm đi cùng. \n Cảm ơn Nghĩa vì đã đồng hành với CIO từ những ngày đầu tiên, vì những lần support cực đúng lúc, và vì đã làm cho hành trình làm việc chung không chỉ hiệu quả mà còn… vui nữa. Mong năm tới mình vẫn giữ được cái chất phối hợp “ăn ý khỏi nói nhiều” này, có thêm nhiều dự án để cùng nhau làm ra kết quả thật đẹp - và tất nhiên, vẫn cần Nghĩa kéo mood đều đều nha",
+    "end": "CIO Team."
+  },
+  {
+    "id": "40",
+    "name": "Nguyễn Thanh Phi",
+    "open": "Anh Phi thân mến,",
+    "body": "Trong một năm mà ưu tiên thay đổi liên tục và bài toán ngày càng phức tạp, CIO không thể đi xa nếu thiếu sự đồng hành từ anh. Những gì CIO làm được luôn có một phần đến từ sự tin tưởng, phối hợp và hỗ trợ kịp thời từ anh. \n Anh đã luôn dành thời gian lắng nghe, chia sẻ bối cảnh, cùng CIO “clarify” bài toán cho đúng, hỗ trợ tháo gỡ khi cần thiết và tạo điều kiện để CIO có dữ liệu/ nguồn lực/ đầu mối phù hợp để chạy nhanh mà vẫn giữ chất lượng. Không chỉ hỗ trợ công việc, anh còn hào phóng chia sẻ kinh nghiệm quản trị, bài học thực chiến và những góc nhìn giúp CIO trưởng thành hơn. \n Nhờ sự đồng hành đó, nhiều dự án được triển khai mượt hơn, giảm friction giữa các bên, và insight/ giải pháp của CIO bám sát nhu cầu thực tế hơn - tạo ra tác động rõ ràng cho sản phẩm và vận hành tại MoMo. \n CIO thật sự trân trọng sự tin tưởng và sự nâng đỡ của anh dành cho CIO trong suốt thời gian qua. Cảm ơn anh vì đã đồng hành và “mentor” đúng lúc. Mong năm tới CIO tiếp tục được làm việc sát cánh cùng anh nhiều hơn, chủ động hơn, và mang lại nhiều value hơn cho user và cho MoMo.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "41",
+    "name": "Tăng Thị Hà Yên",
+    "image": "Hà Yên.png",
+    "open": "Chị Yên thân mến,",
+    "body": "Trong một năm mà ưu tiên thay đổi liên tục và bài toán ngày càng phức tạp, CIO không thể đi xa nếu thiếu sự đồng hành từ chị. Những gì CIO làm được luôn có một phần đến từ sự tin tưởng, phối hợp và hỗ trợ kịp thời từ chị. \n Chị đã luôn dành thời gian lắng nghe, cùng CIO “clarify” bài toán cho đúng, hỗ trợ tháo gỡ khi cần thiết và tạo điều kiện để CIO có dữ liệu/ đầu mối phù hợp để chạy nhanh mà vẫn giữ chất lượng. Không chỉ hỗ trợ công việc, chị còn hào phóng chia sẻ kinh nghiệm AI, bài học thực chiến và những góc nhìn giúp CIO trưởng thành hơn. \n Nhờ sự đồng hành đó, nhiều dự án được triển khai mượt hơn, giảm friction giữa các bên, và insight/ giải pháp của CIO bám sát nhu cầu thực tế hơn - tạo ra tác động rõ ràng cho sản phẩm và vận hành tại MoMo. \n CIO thật sự trân trọng sự tin tưởng và sự nâng đỡ của chị dành cho CIO trong suốt thời gian qua. Cảm ơn chị vì đã đồng hành và “mentor” đúng lúc. Mong năm tới CIO tiếp tục được làm việc sát cánh cùng chị nhiều hơn, chủ động hơn, và mang lại nhiều value hơn.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "42",
+    "name": "Nguyễn Khánh Toàn",
+    "image": "Nguyễn Khánh Toàn.png",
+    "open": "Anh Toàn thân mến,",
+    "body": "Anh Toàn à, \n Với CIO, anh Toàn luôn là một trong những người chủ động và bền bỉ nhất trong việc thúc đẩy nghiên cứu đi vào thực tế phát triển sản phẩm. Anh không chỉ sẵn sàng đầu tư, mời chuyên gia về để đưa mô hình JTBD vào phát triển sản phẩm, mà còn xây dựng một cách tiếp cận PTSP chỉnh chu, đào tạo bài bản cho đội ngũ. Quan trọng hơn, việc anh tham gia rất sâu vào business giúp các quyết định luôn đạt được sự cân bằng giữa trải nghiệm người dùng và hiệu quả kinh doanh. \n Điều tụi em đặc biệt ngưỡng mộ ở anh là tinh thần tìm hiểu và khám phá không ngừng. Anh đào sâu và mở rộng kiến thức ở bất kỳ lĩnh vực nào anh quan tâm, không chỉ để phục vụ công việc, mà đơn giản vì anh thật sự thích hiểu đến tận cùng bản chất của mọi vấn đề. Chính chiều sâu đó tạo nên những góc nhìn rất “đã” khi làm việc cùng anh. \n Trong hành trình chuyển đổi của CIO, anh là người mang tư duy và công nghệ JTBD về để CIO được học, leverage và tiếp tục lan tỏa. Ở bất kỳ đơn vị nào anh đồng hành, CIO cũng luôn nhận được những đề bài chất lượng, được sử dụng thật và tạo impact thật từ các dự án kinh doanh cụ thể cho đến những sáng kiến dài hơi như Customer2H. \n CIO rất trân trọng sự đồng hành đó và mong tiếp tục được cùng anh Toàn tạo ra nhiều giá trị hơn nữa cho MoMo trong chặng đường phía trước. \n Chúc anh luôn nhiều năng lượng, cảm hứng khám phá và tiếp tục là người anh dẫn dắt đầy ảnh hưởng trong hành trình transform của công ty cũng như của CIO.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "43",
+    "name": "Dương Thanh Đăng",
+    "image": "Dương Thanh Đăng.png",
+    "open": "Anh Đăng thân mến,",
+    "body": "Dưới góc nhìn của CIO, anh Đăng là một business head mang trong mình rất nhiều năng lượng sáng tạo. Trải qua nhiều vai trò tại MoMo, từ data, growth cho đến business head, anh luôn mang theo một góc nhìn linh hoạt và cởi mở với cái mới. Dù những năm trước CIO chưa có nhiều cơ hội làm việc sâu cùng anh, thì 2025 chính là cột mốc đánh dấu sự hợp tác rõ nét giữa anh và CIO thông qua HTMS. \n Trong quá trình đồng hành đó, CIO có cơ hội khám phá một góc nhìn rất khác ở anh, chính là sự sáng tạo đi cùng niềm tin mạnh mẽ rằng sản phẩm tốt nhất thị trường phải bắt đầu từ việc hiểu người dùng thật sâu. Chính niềm tin đó đã giúp các sản phẩm của BU Online không chỉ luôn đạt, thậm chí vượt KPI, mà còn trở thành những giải pháp đột phá và giàu tính sáng tạo, tạo dấu ấn rõ ràng trên thị trường. \n Bên cạnh vai trò business head, anh Đăng cũng là một nhà tài trợ kim cương và là người luôn quan tâm đến con người. Việc anh chủ động đề xuất và thúc đẩy các chương trình ghi nhận xuyên cell team thể hiện rất rõ tư duy “không ai bị bỏ lại phía sau”, tạo động lực tích cực cho đội ngũ trong toàn tổ chức. \n CIO rất mong rằng trong năm 2026, CIO sẽ tiếp tục được đồng hành cùng anh Đăng trong nhiều dự án hay ho hơn nữa, để cùng theo đuổi tham vọng chung: tạo ra những sản phẩm tốt nhất thị trường và mang lại hạnh phúc thật sự cho người dùng.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "44",
+    "name": "Y Phi Thảo",
+    "image": "thao.jpg",
+    "open": "Chị Thảo thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến các bạn cộng tác viên của Ops — những người đứng ở tuyến đầu để mọi nghiên cứu ‘chạy’ được mượt: từ recruit đúng đối tượng, QC dữ liệu cẩn thận, đến CATI kiên nhẫn và chỉn chu trong từng cuộc gọi. Công việc của các bạn có thể không luôn xuất hiện trên spotlight, nhưng chính sự bền bỉ và kỷ luật đó đã giúp team giữ chất lượng, giảm friction và mang lại những insight đáng tin cậy. Cảm ơn các bạn vì đã đồng hành, vì sự chuyên nghiệp và tinh thần trách nhiệm — tụi mình thật sự trân trọng.”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "45",
+    "name": "Ngô Thị Kim Phượng",
+    "image": "Kim Phượng.jpg",
+    "open": "Chị Phượng thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến các bạn cộng tác viên của Ops — những người đứng ở tuyến đầu để mọi nghiên cứu ‘chạy’ được mượt: từ recruit đúng đối tượng, QC dữ liệu cẩn thận, đến CATI kiên nhẫn và chỉn chu trong từng cuộc gọi. Công việc của các bạn có thể không luôn xuất hiện trên spotlight, nhưng chính sự bền bỉ và kỷ luật đó đã giúp team giữ chất lượng, giảm friction và mang lại những insight đáng tin cậy. Cảm ơn các bạn vì đã đồng hành, vì sự chuyên nghiệp và tinh thần trách nhiệm — tụi mình thật sự trân trọng.”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "46",
+    "name": "Trịnh Nhâm Hoàng",
+    "image": "Nhâm Hoàng.jpg",
+    "open": "Anh Hoàng thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến các bạn cộng tác viên của Ops — những người đứng ở tuyến đầu để mọi nghiên cứu ‘chạy’ được mượt: từ recruit đúng đối tượng, QC dữ liệu cẩn thận, đến CATI kiên nhẫn và chỉn chu trong từng cuộc gọi. Công việc của các bạn có thể không luôn xuất hiện trên spotlight, nhưng chính sự bền bỉ và kỷ luật đó đã giúp team giữ chất lượng, giảm friction và mang lại những insight đáng tin cậy. Cảm ơn các bạn vì đã đồng hành, vì sự chuyên nghiệp và tinh thần trách nhiệm — tụi mình thật sự trân trọng.”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "47",
+    "name": "Lê Anh Tuấn",
+    "image": "chibi Anh Tuấn.jpg",
+    "open": "Anh Tuấn thân mến,",
+    "body": "Chào Tuấn, người hàng xóm thân quen – và dần dà trở thành người nhà của CIO. \n CIO và Tuấn có “nhân duyên” từ khá sớm khi cùng chung sếp là anh Vũ. Qua lời giới thiệu của anh Vũ thì CIO được biết Tuấn… giàu. Xin được gửi lời chào thân ái đến gia đình giàu có của CIO  \n Năm 2025, nhân duyên đó lại được nâng cấp khi Tuấn dọn qua ngồi ngay cạnh CIO, cùng chia sẻ không gian làm việc vừa ồn ào vừa giải trí. Ở mặt tích cực, điều này giúp Tuấn có thêm niềm vui tinh thần giữa những lúc phải plan business vài trăm tỷ; còn ở mặt chưa tích cực lắm thì đôi khi khiến Tuấn đau tai, đau đầu và phải… bỏ về sớm. Mong Tuấn niệm tình hàng xóm mà bỏ qua cho CIO nhé 😛 \n Cảm ơn Tuấn vì đã luôn thấu cảm và sẵn sàng sharing, feedback cho các anh chị em CIO trong giai đoạn transform đầy “sóng gió”, khi ở role làm công nghệ thì dev bằng AI, còn khi làm Product thì phải làm sản phẩm với bug um sùm ê hề. Sự kiên nhẫn và tinh thần hỗ trợ của Tuấn là điều CIO rất trân trọng. \n Hy vọng năm 2026, CIO và Tuấn sẽ có cơ hội hợp tác cùng nhau làm một sản phẩm gì đó thật hay ho để bán cho bank, biết đâu là Second Brain phiên bản thương mại thì sao 😉 \n Rất mong tiếp tục được làm hàng xóm, làm người nhà và làm đồng đội cùng Tuấn trên những hành trình tiếp theo.",
+    "end": "CIO Team."
+  },
+  {
+    "id": "48",
+    "name": "Huỳnh Bảo Thạch",
+    "image": "thạch.jpg",
+    "open": "Anh Thạch thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "49",
+    "name": "Ao Thị Thu Ngân",
+    "image": "AO THI THU NGAN.jpg",
+    "open": "Chị Ngân thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến các bạn cộng tác viên của Ops — những người đứng ở tuyến đầu để mọi nghiên cứu ‘chạy’ được mượt: từ recruit đúng đối tượng, QC dữ liệu cẩn thận, đến CATI kiên nhẫn và chỉn chu trong từng cuộc gọi. Công việc của các bạn có thể không luôn xuất hiện trên spotlight, nhưng chính sự bền bỉ và kỷ luật đó đã giúp team giữ chất lượng, giảm friction và mang lại những insight đáng tin cậy. Cảm ơn các bạn vì đã đồng hành, vì sự chuyên nghiệp và tinh thần trách nhiệm — tụi mình thật sự trân trọng.”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "50",
+    "name": "Trần Thị Hồng Ngọc",
+    "image": "Hồng Ngọc.jpg",
+    "open": "Chị Ngọc thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến các bạn cộng tác viên của Ops — những người đứng ở tuyến đầu để mọi nghiên cứu ‘chạy’ được mượt: từ recruit đúng đối tượng, QC dữ liệu cẩn thận, đến CATI kiên nhẫn và chỉn chu trong từng cuộc gọi. Công việc của các bạn có thể không luôn xuất hiện trên spotlight, nhưng chính sự bền bỉ và kỷ luật đó đã giúp team giữ chất lượng, giảm friction và mang lại những insight đáng tin cậy. Cảm ơn các bạn vì đã đồng hành, vì sự chuyên nghiệp và tinh thần trách nhiệm — tụi mình thật sự trân trọng.”",
+    "end": "CIO Team."
+  },
+  {
+    "id": "51",
+    "name": "Trương Lê Quốc Bảo",
+    "image": "Bảo.jpg",
+    "open": "Bảo thân mến,",
+    "body": "Anh muốn gửi một lời chào mừng thật ấm áp đến em. Mới chỉ vài ngày thôi nhưng em đã cho thấy tinh thần rất tốt: chủ động quan sát, chịu khó hỏi để hiểu đúng, và sẵn sàng nhận việc với thái độ nghiêm túc. Cảm ơn em vì đã chọn đồng hành cùng CIO ở giai đoạn này — chúc em sẽ học được thật nhiều, làm được thật chắc, và cảm thấy đây là một nơi ‘vừa được thử, vừa được lớn’. Team luôn ở đây để hỗ trợ em.”",
+    "end": "Anh Cường."
+  },
+  {
+    "id": "53",
+    "name": "Bùi Nhất Sang",
+    "image": "chibi sang.jpg",
+    "open": "Anh Sang thân mến,",
+    "body": "CIO muốn gửi một lời cảm ơn thật lòng đến anh. Ấn tượng ban đầu về anh Sang có thể là khá kiệm lời và “khó tính” theo kiểu tiêu chuẩn cao, nhưng làm việc rồi mới thấy điều đó đến từ sự nghiêm túc và mong muốn mọi thứ được làm đúng, làm tới nơi tới chốn. Điều CIO trân trọng nhất là phía sau sự ít nói đó là một sự quan tâm rất thật: anh để ý con người, để ý cách team vận hành, và luôn hỗ trợ đúng lúc để mọi người làm việc tốt hơn mà vẫn giữ được sự tử tế với nhau. Anh cũng là người được sếp tin tưởng trong cả chuyện lớn lẫn chuyện nhỏ — không chỉ vì năng lực, mà vì sự vững vàng và trách nhiệm.  \n Cảm ơn anh vì đã đồng hành và tạo điều kiện để CIO phối hợp thuận lợi hơn trong năm vừa qua; mong năm tới mình tiếp tục làm việc cùng nhau nhiều hơn, nhanh hơn và tạo ra nhiều impact hơn cho khách hàng và tổ chức nhé",
+    "end": "CIO Team."
+  },
+  {
+    "id": "54",
+    "name": "Trần Thanh Phụng Nghi",
+    "open": "Chị Nghi thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
+  },
+  {
+    "id": "55",
+    "name": "Nguyễn Trâm Âu",
+    "open": "Chị Âu thân mến,",
+    "body": "Gửi lời cảm ơn thật lòng đến các bạn đã rời team trong 6 tháng vừa qua. Cảm ơn vì những ngày mình đã cùng nhau chạy dự án, gỡ vấn đề, chia sẻ áp lực và cả những tiếng cười rất ‘đúng chất’ team. Những đóng góp của các bạn đã trở thành một phần của hành trình và kết quả mà CIO có được hôm nay. Chúc các bạn thật nhiều sức khỏe, bình an và gặp đúng môi trường để tiếp tục tỏa sáng — dù ở đâu, vẫn luôn trân trọng và nhớ về các bạn",
+    "end": "CIO Team."
   }
 ]
