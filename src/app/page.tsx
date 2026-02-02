@@ -33,7 +33,7 @@ export default function Home() {
       <main className="fixed bottom-[10%] left-0 right-0 z-10 flex flex-col gap-6 px-6 md:bottom-[10%] md:gap-8">
         <Card className="mx-auto w-full max-w-6xl border-white/70 bg-white/80 shadow-[0_30px_60px_-40px_rgba(209,0,108,0.7)] backdrop-blur">
           <CardContent className="flex flex-col gap-6 p-6 md:p-8">
-            <Countdown targetIso="2026-02-03T13:00:00.000Z" />
+            <Countdown targetIso="2026-02-03T11:30:00.000Z" />
           </CardContent>
         </Card>
 

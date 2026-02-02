@@ -4,8 +4,11 @@ import { RedirectLoader } from "@/components/redirect-loader";
 
 type RedirectEntry = {
   id: string;
-  url: string;
   name: string;
+  image?: string;
+  open: string;
+  body: string;
+  end: string;
 };
 
 type PageProps = {
@@ -16,7 +19,7 @@ type PageProps = {
 
 export default async function PresentPage({ params }: PageProps) {
   const { id } = await params;
-  const targetMs = new Date("2026-02-03T13:00:00.000Z").getTime();
+  const targetMs = new Date("2026-02-03T11:30:00.000Z").getTime();
   const nowMs = Date.now();
 
   if (nowMs < targetMs) {
@@ -31,5 +34,5 @@ export default async function PresentPage({ params }: PageProps) {
     notFound();
   }
 
-  return <RedirectLoader url={entry.url} id={entry.id} name={entry.name} />;
+  return <RedirectLoader url={`/appreciation/${entry.id}`} id={entry.id} name={entry.name} />;
 }

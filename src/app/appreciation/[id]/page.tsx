@@ -198,7 +198,7 @@ export default function AppreciationPage() {
     <div className="flex min-h-dvh items-center justify-center bg-[#f5f0eb] px-4 py-8">
       {/* Envelope */}
       <div
-        className="w-full max-w-lg transition-all duration-1000"
+        className="w-full max-w-lg md:max-w-[800px] transition-all duration-1000"
         style={{
           opacity: isCardVisible ? 0 : 1,
           pointerEvents: isCardVisible ? "none" : "auto",
@@ -286,7 +286,7 @@ export default function AppreciationPage() {
 
       {/* Card - fade in */}
       <div
-        className="w-full max-w-lg transition-all duration-1000 ease-out"
+        className="w-full max-w-lg md:max-w-[800px] transition-all duration-1000 ease-out"
         style={{
           opacity: isCardVisible ? 1 : 0,
           pointerEvents: isCardVisible ? "auto" : "none",
@@ -314,17 +314,21 @@ export default function AppreciationPage() {
           </div>
 
           {/* Message */}
-          <div className="px-8 pb-8 pt-2">
+          <div className="px-8 pb-8 pt-8">
             <p
               className="mb-4 text-xl text-[#1a2a5e]"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
               {greeting}
             </p>
-            <p
-              className="mb-6 whitespace-pre-line text-base leading-relaxed text-[#1a2a5e]"
+            <div
+              className="mb-6 text-base leading-relaxed text-[#1a2a5e]"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              {message}
-            </p>
+              {message.split("\n").filter(Boolean).map((paragraph, i) => (
+                <p key={i} className="mb-3">
+                  {paragraph.trim()}
+                </p>
+              ))}
+            </div>
             <p
               className="mt-6 text-center text-xl leading-relaxed"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
