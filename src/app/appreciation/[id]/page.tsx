@@ -7,6 +7,18 @@ import Link from "next/link";
 import { toPng } from "html-to-image";
 import data from "@/data.json";
 
+const calendar = {
+  month: "FEBRUARY 2026",
+  days: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+  weeks: [
+    [1, 2, 3, 4, 5, 6, 7],
+    [8, 9, 10, 11, 12, 13, 14],
+    [15, 16, 17, 18, 19, 20, 21],
+    [22, 23, 24, 25, 26, 27, 28],
+  ],
+  highlightDay: 3,
+};
+
 function ShareMenu() {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -139,6 +151,41 @@ export default function AppreciationPage() {
   const message = item?.body ?? "";
   const signature = item?.end ?? "";
 
+  const thankYouText =
+    "Thank you for being one of the reasons\nthat make CIO truly special";
+  const sections = [greeting, message, thankYouText, signature];
+  const cumLengths = sections.reduce<number[]>((acc, s, i) => {
+    acc.push((i > 0 ? acc[i - 1] : 0) + s.length);
+    return acc;
+  }, []);
+  const totalLength = cumLengths[cumLengths.length - 1] || 0;
+
+  const [charIndex, setCharIndex] = useState(0);
+  const [typingDone, setTypingDone] = useState(false);
+
+  useEffect(() => {
+    if (phase !== "content") return;
+    let idx = 0;
+    setCharIndex(0);
+    setTypingDone(false);
+    const interval = setInterval(() => {
+      idx++;
+      setCharIndex(idx);
+      if (idx >= totalLength) {
+        clearInterval(interval);
+        setTypingDone(true);
+      }
+    }, 30);
+    return () => clearInterval(interval);
+  }, [phase, totalLength]);
+
+  const displayedSections = sections.map((s, i) => {
+    const start = i > 0 ? cumLengths[i - 1] : 0;
+    const charsInto = charIndex - start;
+    if (charsInto <= 0) return "";
+    return s.slice(0, charsInto);
+  });
+
   const isCardVisible = phase === "card" || phase === "content";
 
   const handleDownload = async () => {
@@ -166,13 +213,18 @@ export default function AppreciationPage() {
     }
   };
 
+  const [showThankYou, setShowThankYou] = useState(true);
+
   // Auto-open after 1.5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setPhase("opening");
       setTimeout(() => setPhase("opened"), 800);
       setTimeout(() => setPhase("card"), 1600);
-      setTimeout(() => setPhase("content"), 2400);
+      setTimeout(() => {
+        setShowThankYou(false);
+      }, 2600); // 1s after card appears
+      setTimeout(() => setPhase("content"), 3100); // fade out 500ms then start typing
     }, 1500);
     return () => clearTimeout(timer);
   }, []);
@@ -313,70 +365,213 @@ export default function AppreciationPage() {
             />
           </div>
 
-          {/* Message */}
-          <div className="px-8 pb-8 pt-8">
-            <p
-              className="mb-4 text-xl text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              {greeting}
-            </p>
-            <div
-              className="mb-6 text-base leading-relaxed text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              {message.split("\n").filter(Boolean).map((paragraph, i) => (
-                <p key={i} className="mb-3">
-                  {paragraph.trim()}
-                </p>
-              ))}
+          {/* Thank you + Calendar (shows first, then fades out) */}
+          <div
+            className="transition-all duration-500"
+            style={{
+              opacity: showThankYou ? 1 : 0,
+              maxHeight: showThankYou ? "500px" : "0px",
+              overflow: "hidden",
+              transition: "opacity 500ms ease-out, max-height 500ms ease-out",
+            }}>
+            <div className="flex px-8 py-8">
+              <div className="flex w-16 shrink-0 items-center justify-center">
+                <span
+                  className="-rotate-90 whitespace-nowrap text-5xl italic text-[#1a2a5e]"
+                  style={{
+                    fontFamily: "var(--font-dancing-script), cursive",
+                  }}>
+                  Thank you
+                </span>
+              </div>
+              <div className="flex-1 pl-3">
+                <h3 className="mb-3 text-center text-sm font-bold tracking-widest text-[#1a2a5e]">
+                  {calendar.month}
+                </h3>
+                <table className="w-full text-center text-xs">
+                  <thead>
+                    <tr>
+                      {calendar.days.map((day) => (
+                        <th
+                          key={day}
+                          className="pb-2 font-semibold text-[#1a2a5e]">
+                          {day}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {calendar.weeks.map((week, i) => (
+                      <tr key={i}>
+                        {week.map((day) => (
+                          <td key={day} className="py-1 text-[#1a2a5e]">
+                            {day === calendar.highlightDay ? (
+                              <span className="inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-[#d1006c] text-xs font-bold text-[#d1006c]">
+                                {day}
+                              </span>
+                            ) : (
+                              day
+                            )}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <p
-              className="mt-6 text-center text-xl leading-relaxed"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              <span className="text-[#d1006c] italic">
-                Thank you for being one of the reasons
-              </span>
-              <br />
-              <span className="text-[#1a2a5e] font-bold italic">
-                that make CIO truly special
-              </span>
-            </p>
-            <p
-              className="mt-4 text-right text-xl font-semibold italic text-[#1a2a5e]"
-              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              {signature}
-            </p>
-          </div>
-        </div>
-        <div className="mt-5 flex flex-col items-center gap-4">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={handleDownload}
-              className="flex items-center gap-1.5 text-sm text-[#1a2a5e]/70 transition-colors hover:text-[#d1006c]">
+
+            {/* Decorative leaf */}
+            <div className="flex justify-end px-8">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
+                width="80"
+                height="40"
+                viewBox="0 0 80 40"
                 fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <polyline points="7 10 12 15 17 10" />
-                <line x1="12" y1="15" x2="12" y2="3" />
+                className="text-[#8a9a7a] opacity-60">
+                <path
+                  d="M5 35 Q20 20 40 22 Q60 24 75 5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M40 22 Q38 15 42 8"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M40 22 Q45 16 50 12"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M40 22 Q35 18 33 12"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M55 15 Q58 10 62 7"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M55 15 Q52 10 50 6"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M25 28 Q22 22 24 16"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
+                <path
+                  d="M25 28 Q28 23 32 18"
+                  stroke="currentColor"
+                  strokeWidth="1"
+                  fill="none"
+                />
               </svg>
-              Tải xuống
-            </button>
-            <span className="text-[#1a2a5e]/20">|</span>
-            <ShareMenu />
+            </div>
           </div>
-          <Link
-            href="/appreciation"
-            className="rounded-full bg-[#1a2a5e] px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#d1006c] hover:shadow-lg">
-            Khám phá các lời gửi gắm khác
-          </Link>
+
+          {/* Message (appears after thank you fades out) */}
+          {phase === "content" && (
+            <div className="px-8 pb-8 pt-8">
+              {displayedSections[0] && (
+                <p
+                  className="mb-4 text-xl text-[#1a2a5e]"
+                  style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
+                  {displayedSections[0]}
+                </p>
+              )}
+              {displayedSections[1] && (
+                <div
+                  className="mb-6 text-base leading-relaxed text-[#1a2a5e]"
+                  style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
+                  {displayedSections[1]
+                    .split("\n")
+                    .filter(Boolean)
+                    .map((paragraph: string, i: number) => (
+                      <p key={i} className="mb-3">
+                        {paragraph.trim()}
+                      </p>
+                    ))}
+                </div>
+              )}
+              {displayedSections[2] && (
+                <p
+                  className="mt-6 text-center text-md leading-relaxed"
+                  style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
+                  {displayedSections[2].split("\n").map((line: string, i: number) => (
+                    <span
+                      key={i}
+                      className={
+                        i === 0
+                          ? "text-[#d1006c] italic"
+                          : "text-[#1a2a5e] font-bold italic"
+                      }>
+                      {i > 0 && <br />}
+                      {line}
+                    </span>
+                  ))}
+                </p>
+              )}
+              {displayedSections[3] && (
+                <p
+                  className="mt-4 text-right text-xl font-semibold italic text-[#1a2a5e]"
+                  style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
+                  {displayedSections[3]}
+                </p>
+              )}
+            </div>
+          )}
         </div>
+        {typingDone && (
+          <div className="mt-5 flex flex-col items-center gap-4 animate-[fadeIn_0.5s_ease-out]">
+            <div className="flex items-center gap-4">
+              <button
+                onClick={handleDownload}
+                className="flex items-center gap-1.5 text-sm text-[#1a2a5e]/70 transition-colors hover:text-[#d1006c]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                Tải xuống
+              </button>
+              <span className="text-[#1a2a5e]/20">|</span>
+              <ShareMenu />
+            </div>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={() => window.location.reload()}
+                className="rounded-full border border-[#1a2a5e] px-6 py-3 text-sm font-medium text-[#1a2a5e] transition-all hover:bg-[#1a2a5e] hover:text-white hover:shadow-lg">
+                Xem lại
+              </button>
+              <Link
+                href="/appreciation"
+                className="rounded-full bg-[#1a2a5e] px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#d1006c] hover:shadow-lg">
+                Khám phá thêm
+              </Link>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

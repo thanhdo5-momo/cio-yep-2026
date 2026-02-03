@@ -8,18 +8,38 @@ import teamData from "@/team.json";
 type Phase = "idle" | "shuffling" | "reveal";
 
 const TEAM_COLORS = [
-  { bg: "from-pink-500 to-rose-500", light: "bg-pink-50", border: "border-pink-300", text: "text-pink-700", badge: "bg-pink-500" },
-  { bg: "from-violet-500 to-purple-500", light: "bg-violet-50", border: "border-violet-300", text: "text-violet-700", badge: "bg-violet-500" },
-  { bg: "from-amber-500 to-orange-500", light: "bg-amber-50", border: "border-amber-300", text: "text-amber-700", badge: "bg-amber-500" },
-  { bg: "from-emerald-500 to-teal-500", light: "bg-emerald-50", border: "border-emerald-300", text: "text-emerald-700", badge: "bg-emerald-500" },
+  {
+    bg: "from-pink-500 to-rose-500",
+    light: "bg-pink-50",
+    border: "border-pink-300",
+    text: "text-pink-700",
+    badge: "bg-pink-500",
+  },
+  {
+    bg: "from-violet-500 to-purple-500",
+    light: "bg-violet-50",
+    border: "border-violet-300",
+    text: "text-violet-700",
+    badge: "bg-violet-500",
+  },
+  {
+    bg: "from-amber-500 to-orange-500",
+    light: "bg-amber-50",
+    border: "border-amber-300",
+    text: "text-amber-700",
+    badge: "bg-amber-500",
+  },
+  {
+    bg: "from-emerald-500 to-teal-500",
+    light: "bg-emerald-50",
+    border: "border-emerald-300",
+    text: "text-emerald-700",
+    badge: "bg-emerald-500",
+  },
 ];
 
 function normalizeName(name: string) {
-  return name
-    .normalize("NFC")
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-    .trim();
+  return name.normalize("NFC").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
 function findUserData(memberName: string) {
@@ -35,8 +55,7 @@ function DefaultAvatar({ size = 40 }: { size?: number }) {
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="rounded-full"
-    >
+      className="rounded-full">
       <rect width="40" height="40" rx="20" fill="#E0E0E0" />
       <circle cx="20" cy="16" r="7" fill="#BDBDBD" />
       <ellipse cx="20" cy="34" rx="12" ry="10" fill="#BDBDBD" />
@@ -60,8 +79,7 @@ function Avatar({
     return (
       <div
         className={`rounded-full overflow-hidden flex-shrink-0 ${className}`}
-        style={{ width: size, height: size }}
-      >
+        style={{ width: size, height: size }}>
         <DefaultAvatar size={size} />
       </div>
     );
@@ -70,8 +88,7 @@ function Avatar({
   return (
     <div
       className={`rounded-full overflow-hidden flex-shrink-0 ${className}`}
-      style={{ width: size, height: size }}
-    >
+      style={{ width: size, height: size }}>
       <Image
         src={`/chibi/${userData!.image}`}
         alt={member}
@@ -114,7 +131,7 @@ export default function GameMatchingPage() {
           y: (Math.random() - 0.5) * 300,
           scale: 0.5 + Math.random() * 0.8,
           rotation: Math.random() * 720 - 360,
-        }))
+        })),
       );
     }, 150);
 
@@ -150,7 +167,7 @@ export default function GameMatchingPage() {
         y: 0,
         scale: 1,
         rotation: 0,
-      }))
+      })),
     );
   }, []);
 
@@ -190,11 +207,15 @@ export default function GameMatchingPage() {
 
       {/* IDLE: Rotating circle of avatars + button */}
       {phase === "idle" && (
-        <div className="relative z-10 flex items-center justify-center" style={{ height: "calc(100vh - 140px)" }}>
+        <div
+          className="relative z-10 flex items-center justify-center"
+          style={{ height: "calc(100vh - 140px)" }}>
           <div className="relative" style={{ width: 500, height: 500 }}>
             {/* Avatars in orbit */}
             {allMembers.map((member, i) => {
-              const angle = (i / allMembers.length) * Math.PI * 2 + (rotation * Math.PI) / 180;
+              const angle =
+                (i / allMembers.length) * Math.PI * 2 +
+                (rotation * Math.PI) / 180;
               const radius = 200;
               const x = Math.cos(angle) * radius;
               const y = Math.sin(angle) * radius;
@@ -206,8 +227,7 @@ export default function GameMatchingPage() {
                   style={{
                     left: 250 + x - 28,
                     top: 250 + y - 28,
-                  }}
-                >
+                  }}>
                   <div className="group relative">
                     <div className="ring-2 ring-white shadow-lg rounded-full hover:scale-125 transition-transform duration-200 hover:z-50">
                       <Avatar member={member} size={56} />
@@ -225,8 +245,7 @@ export default function GameMatchingPage() {
               <button
                 onClick={handleSplit}
                 className="w-32 h-32 rounded-full bg-gradient-to-br from-[var(--momo-pink)] to-[var(--momo-rose)] text-white font-bold text-lg shadow-2xl hover:shadow-pink-500/50 hover:scale-110 transition-all duration-300 cursor-pointer active:scale-95"
-                style={{ animation: "glow 2s ease-in-out infinite" }}
-              >
+                style={{ animation: "glow 2s ease-in-out infinite" }}>
                 Chia Đội!
               </button>
             </div>
@@ -236,10 +255,17 @@ export default function GameMatchingPage() {
 
       {/* SHUFFLING: Chaotic animation */}
       {phase === "shuffling" && (
-        <div className="relative z-10 flex items-center justify-center" style={{ height: "calc(100vh - 140px)" }}>
+        <div
+          className="relative z-10 flex items-center justify-center"
+          style={{ height: "calc(100vh - 140px)" }}>
           <div className="relative" style={{ width: 500, height: 500 }}>
             {allMembers.map((member, i) => {
-              const pos = shufflePositions[i] || { x: 0, y: 0, scale: 1, rotation: 0 };
+              const pos = shufflePositions[i] || {
+                x: 0,
+                y: 0,
+                scale: 1,
+                rotation: 0,
+              };
               return (
                 <div
                   key={member}
@@ -248,8 +274,7 @@ export default function GameMatchingPage() {
                     left: 250 + pos.x - 24,
                     top: 250 + pos.y - 24,
                     transform: `scale(${pos.scale}) rotate(${pos.rotation}deg)`,
-                  }}
-                >
+                  }}>
                   <div className="ring-2 ring-white shadow-lg rounded-full">
                     <Avatar member={member} size={48} />
                   </div>
@@ -282,10 +307,10 @@ export default function GameMatchingPage() {
                     isVisible
                       ? "opacity-100 translate-y-0 scale-100"
                       : "opacity-0 translate-y-12 scale-95"
-                  }`}
-                >
+                  }`}>
                   {/* Team header */}
-                  <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-white font-bold text-sm mb-4 bg-gradient-to-r ${color.bg}`}>
+                  <div
+                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-white font-bold text-sm mb-4 bg-gradient-to-r ${color.bg}`}>
                     <span className="text-lg">
                       {teamIdx === 0 && "🔥"}
                       {teamIdx === 1 && "💜"}
@@ -309,8 +334,7 @@ export default function GameMatchingPage() {
                           transitionDelay: isVisible
                             ? `${memberIdx * 80 + 200}ms`
                             : "0ms",
-                        }}
-                      >
+                        }}>
                         <div className="ring-2 ring-white shadow-sm rounded-full">
                           <Avatar member={member} size={40} />
                         </div>
@@ -324,18 +348,6 @@ export default function GameMatchingPage() {
               );
             })}
           </div>
-
-          {/* Reset button */}
-          {revealedTeams >= teamData.teams.length && (
-            <div className="flex justify-center mt-8">
-              <button
-                onClick={handleReset}
-                className="px-8 py-3 rounded-full bg-gradient-to-r from-[var(--momo-pink)] to-[var(--momo-rose)] text-white font-bold shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-300 cursor-pointer"
-              >
-                Chơi lại
-              </button>
-            </div>
-          )}
         </div>
       )}
 
@@ -347,11 +359,27 @@ export default function GameMatchingPage() {
 
 function ConfettiOverlay() {
   const [particles, setParticles] = useState<
-    { id: number; x: number; delay: number; color: string; size: number; duration: number }[]
+    {
+      id: number;
+      x: number;
+      delay: number;
+      color: string;
+      size: number;
+      duration: number;
+    }[]
   >([]);
 
   useEffect(() => {
-    const colors = ["#d1006c", "#ff6aa7", "#ff4d7d", "#8b5cf6", "#f59e0b", "#10b981", "#ec4899", "#6366f1"];
+    const colors = [
+      "#d1006c",
+      "#ff6aa7",
+      "#ff4d7d",
+      "#8b5cf6",
+      "#f59e0b",
+      "#10b981",
+      "#ec4899",
+      "#6366f1",
+    ];
     const ps = Array.from({ length: 60 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,

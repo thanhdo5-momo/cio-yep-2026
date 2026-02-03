@@ -37,7 +37,7 @@ export function RedirectLoader({
   const progress = Math.round((elapsed / TOTAL_DURATION_MS) * 100);
   const secondsLeft = Math.max(
     0,
-    Math.ceil((TOTAL_DURATION_MS - elapsed) / 1000)
+    Math.ceil((TOTAL_DURATION_MS - elapsed) / 1000),
   );
 
   return (
@@ -52,28 +52,27 @@ export function RedirectLoader({
               YEP 2026
             </span>
             <h1 className="text-3xl font-semibold leading-tight text-[color:var(--momo-ink)] md:text-4xl font-[var(--font-display)]">
-              Hi {name}, your surprise is loading.
+              Chào {name}, một điều bất ngờ đang chờ bạn phía trước.
             </h1>
             <p className="text-sm text-[color:var(--momo-ink)] opacity-70 md:text-base">
-              Get ready to see your Year End Party present. We are preparing the
-              reveal for you.
+              Món quà Year End Party đang dần được hé lộ…
             </p>
           </div>
 
           <div className="flex flex-col gap-3">
             <Progress value={progress} className="h-2" />
             <div className="flex items-center justify-between text-xs font-medium text-[color:var(--momo-ink)] opacity-60">
-              <span>{secondsLeft}s remaining</span>
+              <span>{secondsLeft}s</span>
               <span>{progress}%</span>
             </div>
           </div>
 
           <div className="rounded-2xl bg-[color:var(--momo-cream)] px-4 py-3 text-sm text-[color:var(--momo-ink)] opacity-70">
-            If nothing happens,{" "}
+            Nếu chưa có gì xảy ra,{" "}
             <a
               className="font-semibold text-[color:var(--momo-pink)] underline"
               href={url}>
-              tap here to view your present
+              nhấn vào đây để xem quà của bạn.
             </a>
             .
           </div>
