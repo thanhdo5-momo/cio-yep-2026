@@ -422,7 +422,7 @@ export default function AppreciationPage() {
             </div>
 
             {/* Decorative leaf */}
-            <div className="flex justify-end px-8">
+            <div className="flex justify-end px-8 pb-2">
               <svg
                 width="80"
                 height="40"
@@ -509,18 +509,20 @@ export default function AppreciationPage() {
                 <p
                   className="mt-6 text-center text-md leading-relaxed"
                   style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-                  {displayedSections[2].split("\n").map((line: string, i: number) => (
-                    <span
-                      key={i}
-                      className={
-                        i === 0
-                          ? "text-[#d1006c] italic"
-                          : "text-[#1a2a5e] font-bold italic"
-                      }>
-                      {i > 0 && <br />}
-                      {line}
-                    </span>
-                  ))}
+                  {displayedSections[2]
+                    .split("\n")
+                    .map((line: string, i: number) => (
+                      <span
+                        key={i}
+                        className={
+                          i === 0
+                            ? "text-[#d1006c] italic"
+                            : "text-[#1a2a5e] font-bold italic"
+                        }>
+                        {i > 0 && <br />}
+                        {line}
+                      </span>
+                    ))}
                 </p>
               )}
               {displayedSections[3] && (
