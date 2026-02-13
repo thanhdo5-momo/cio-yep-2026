@@ -6,41 +6,46 @@ import { Button } from "@/components/ui/button";
 
 // Starting directly with YEP event - removed throughout_the_year section
 
-// Media from within_yep (images and videos) - shuffled for variety
+// Media from within_yep following the rules:
+// 1. All other media first
+// 2. Then fun_{number} media
+// 3. End with end.JPG
 const withinYepMedia = [
-  { src: "/recap/within_yep/IMG_3535.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3545.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_7500.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3551.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3556.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3557.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_7501.JPG", type: "image" },
+  // Regular media - images and videos
+  { src: "/recap/within_yep/nt_1.JPG", type: "image" },
+  { src: "/recap/within_yep/nt_2.JPG", type: "image" },
+  { src: "/recap/within_yep/nt_3.JPG", type: "image" },
+  { src: "/recap/within_yep/nt_4.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3561.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3566.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3568.JPG", type: "image" },
   { src: "/recap/within_yep/MVI_3520.MP4", type: "video" },
   { src: "/recap/within_yep/IMG_3575.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3576.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3578.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_7487.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3579.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3588.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3590.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3595.JPG", type: "image" },
   { src: "/recap/within_yep/MVI_3644.MP4", type: "video" },
   { src: "/recap/within_yep/IMG_3596.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3601.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_7503.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3602.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3615.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3619.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3624.JPG", type: "image" },
-  { src: "/recap/within_yep/MVI_3645.MP4", type: "video" },
   { src: "/recap/within_yep/IMG_3638.JPG", type: "image" },
+  { src: "/recap/within_yep/MVI_3645.MP4", type: "video" },
   { src: "/recap/within_yep/IMG_3664.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_7543.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_3682.JPG", type: "image" },
-  { src: "/recap/within_yep/IMG_9283.JPG", type: "image" },
+  { src: "/recap/within_yep/IMG_7500.JPG", type: "image" },
+  { src: "/recap/within_yep/IMG_7501.JPG", type: "image" },
+  { src: "/recap/within_yep/IMG_7503.JPG", type: "image" },
+  
+  // Fun media section
+  { src: "/recap/within_yep/fun_1.jpg", type: "image" },
+  { src: "/recap/within_yep/fun_3.JPG", type: "image" },
+  { src: "/recap/within_yep/fun_5.JPG", type: "image" },
+  { src: "/recap/within_yep/fun_6.mp4", type: "video" },
+  { src: "/recap/within_yep/fun_7.mp4", type: "video" },
+  { src: "/recap/within_yep/fun_8.mp4", type: "video" },
+  
+  // End image - always last
+  { src: "/recap/within_yep/end.JPG", type: "image" },
 ] as const;
 
 type Phase = "intro" | "within-yep" | "outro";
@@ -146,8 +151,13 @@ export default function RecapPage() {
 
       if (currentImageIndex < withinYepMedia.length) {
         const currentMedia = withinYepMedia[currentImageIndex];
-        // Videos stay 3s, images stay 1.5s
-        const duration = currentMedia.type === "video" ? 3000 : 1500;
+        // end.JPG stays 3s, fun videos 4s, other videos 3s, images 1.5s
+        let duration = 1500;
+        if (currentMedia.src.includes("end.JPG")) {
+          duration = 3000; // Longer display for ending image
+        } else if (currentMedia.type === "video") {
+          duration = currentMedia.src.includes("fun_") ? 4000 : 3000;
+        }
 
         const timer = setTimeout(() => {
           setIsVisible(false);
@@ -165,12 +175,6 @@ export default function RecapPage() {
       }
     }
   }, [mounted, phase, currentImageIndex, showTitle]);
-
-  const handleReplay = () => {
-    setPhase("intro");
-    setCurrentImageIndex(0);
-    setIsVisible(true);
-  };
 
   // Prevent hydration mismatch
   if (!mounted) {
@@ -302,7 +306,10 @@ export default function RecapPage() {
                   muted
                   playsInline
                   loop
-                  className="h-full w-full object-contain"
+                  className="h-full w-auto max-w-full object-contain"
+                  style={{
+                    margin: "0 auto",
+                  }}
                 />
               ) : (
                 <Image
@@ -339,7 +346,7 @@ export default function RecapPage() {
 
           <div className="mt-8 flex flex-col gap-4 animate-[fadeIn_2s_ease-out_0.5s_backwards] sm:flex-row">
             <Button
-              onClick={handleReplay}
+              onClick={() => window.location.reload()}
               size="lg"
               className="border-2 border-[#1a2a5e] bg-white px-8 py-6 text-lg font-semibold text-[#1a2a5e] hover:bg-[#1a2a5e] hover:text-white">
               🔄 Xem lại
