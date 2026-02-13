@@ -4,41 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-// Images from throughout_the_year
-const throughoutYearImages = [
-  {
-    src: "/recap/throughout_the_year/Innovation Contest 2022.jpg",
-    caption: "Innovation Contest 2022 - Nơi những ý tưởng được thắp sáng",
-  },
-  {
-    src: "/recap/throughout_the_year/Giải Hackathon (chung vài bạn Team khác).jpg",
-    caption: "Hackathon - Cùng nhau vượt qua thử thách",
-  },
-  {
-    src: "/recap/throughout_the_year/Cúp Innovation Leader of The year.jpg",
-    caption: "Innovation Leader of The Year - Niềm tự hào của chúng ta",
-  },
-  {
-    src: "/recap/throughout_the_year/MoMo Challenge 2024_Giải KK.jpg",
-    caption: "MoMo Challenge 2024 - Đam mê không ngừng nghỉ",
-  },
-  {
-    src: "/recap/throughout_the_year/IMG_2562.JPG",
-    caption: "CBMC 2025 - Nơi những ý tưởng được thắp sáng",
-  },
-  {
-    src: "/recap/throughout_the_year/IMG_7085 5.JPG",
-    caption: "Team building - Gắn kết mọi thành viên",
-  },
-  {
-    src: "/recap/throughout_the_year/IMG_9282.JPG",
-    caption: "Những chiến thắng đáng tự hào",
-  },
-  {
-    src: "/recap/throughout_the_year/IMG_9283.JPG",
-    caption: "Hành trình 2025 đầy ắp kỷ niệm",
-  },
-];
+// Starting directly with YEP event - removed throughout_the_year section
 
 // Media from within_yep (images and videos) - shuffled for variety
 const withinYepMedia = [
@@ -74,14 +40,10 @@ const withinYepMedia = [
   { src: "/recap/within_yep/IMG_3664.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_7543.JPG", type: "image" },
   { src: "/recap/within_yep/IMG_3682.JPG", type: "image" },
+  { src: "/recap/within_yep/IMG_9283.JPG", type: "image" },
 ] as const;
 
-type Phase =
-  | "intro"
-  | "throughout-year"
-  | "transition"
-  | "within-yep"
-  | "outro";
+type Phase = "intro" | "within-yep" | "outro";
 
 export default function RecapPage() {
   const [mounted, setMounted] = useState(false);
@@ -90,11 +52,10 @@ export default function RecapPage() {
   const [isVisible, setIsVisible] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
   const [showTitle, setShowTitle] = useState(true);
+  const [audioStarted, setAudioStarted] = useState(false);
 
-  // Audio refs
-  const chillMusicRef = useRef<HTMLAudioElement>(null);
-  const hallOfFameRef = useRef<HTMLAudioElement>(null);
-  const onTopRef = useRef<HTMLAudioElement>(null);
+  // Audio ref - only using On Top of the World throughout
+  const musicRef = useRef<HTMLAudioElement>(null);
 
   // Fix hydration mismatch
   useEffect(() => {
@@ -133,64 +94,39 @@ export default function RecapPage() {
     }, stepTime);
   };
 
-  // Music control based on phase
+  // Music control - play throughout all phases
   useEffect(() => {
-    if (!mounted || isMuted) return;
+    if (!mounted || isMuted || !audioStarted) return;
 
-    const playMusic = (ref: React.RefObject<HTMLAudioElement | null>) => {
-      const audio = ref.current;
-      if (audio) {
-        audio.volume = 0;
-        audio.play().catch((error) => {
-          // Silently handle autoplay restrictions or missing files
-          console.log("Audio play prevented:", error);
-        });
-        fadeAudio(audio, true, 1500);
-      }
-    };
-
-    const stopMusic = (ref: React.RefObject<HTMLAudioElement | null>) => {
-      const audio = ref.current;
-      if (audio) {
-        fadeAudio(audio, false, 1000);
-      }
-    };
-
-    // Stop all music first
-    [chillMusicRef, hallOfFameRef, onTopRef].forEach((ref) => {
-      if (ref.current && !ref.current.paused) {
-        stopMusic(ref);
-      }
-    });
-
-    // Play appropriate music for phase
-    if (phase === "intro" || phase === "transition" || phase === "outro") {
-      playMusic(chillMusicRef);
-    } else if (phase === "throughout-year") {
-      playMusic(hallOfFameRef);
-    } else if (phase === "within-yep") {
-      playMusic(onTopRef);
+    const audio = musicRef.current;
+    if (audio && audio.paused) {
+      audio.volume = 0;
+      audio.play().catch((error) => {
+        console.log("Audio play prevented:", error);
+      });
+      fadeAudio(audio, true, 1500);
     }
-  }, [mounted, phase, isMuted]);
+  }, [mounted, audioStarted, isMuted]);
 
-  // Mute/unmute all audio
+  // Mute/unmute audio
   useEffect(() => {
-    [chillMusicRef, hallOfFameRef, onTopRef].forEach((ref) => {
-      if (ref.current) {
-        if (isMuted) {
-          fadeAudio(ref.current, false, 500);
-        }
+    if (musicRef.current) {
+      if (isMuted) {
+        fadeAudio(musicRef.current, false, 500);
+      } else if (audioStarted) {
+        fadeAudio(musicRef.current, true, 500);
       }
-    });
-  }, [isMuted]);
+    }
+  }, [isMuted, audioStarted]);
 
   useEffect(() => {
     if (!mounted) return;
 
-    // Intro phase - 3 seconds
+    // Intro phase - 3 seconds, then go directly to YEP
     const introTimer = setTimeout(() => {
-      setPhase("throughout-year");
+      setPhase("within-yep");
       setCurrentImageIndex(0);
+      setShowTitle(true);
     }, 3000);
 
     return () => clearTimeout(introTimer);
@@ -198,38 +134,6 @@ export default function RecapPage() {
 
   useEffect(() => {
     if (!mounted) return;
-
-    if (phase === "throughout-year") {
-      // Hide title after first image
-      if (currentImageIndex === 0 && showTitle) {
-        const titleTimer = setTimeout(() => {
-          setShowTitle(false);
-        }, 2000);
-        return () => clearTimeout(titleTimer);
-      }
-
-      if (currentImageIndex < throughoutYearImages.length) {
-        const timer = setTimeout(() => {
-          setIsVisible(false);
-          setTimeout(() => {
-            setCurrentImageIndex((prev) => prev + 1);
-            setIsVisible(true);
-          }, 300);
-        }, 2500);
-        return () => clearTimeout(timer);
-      } else {
-        // Transition to YEP party
-        setTimeout(() => {
-          setPhase("transition");
-          setTimeout(() => {
-            setPhase("within-yep");
-            setCurrentImageIndex(0);
-            setIsVisible(true);
-            setShowTitle(true); // Reset title for next section
-          }, 2000);
-        }, 300);
-      }
-    }
 
     if (phase === "within-yep") {
       // Hide title after first image
@@ -275,18 +179,39 @@ export default function RecapPage() {
     );
   }
 
+  const handleStartAudio = () => {
+    setAudioStarted(true);
+    // Start playing On Top of the World
+    if (musicRef.current) {
+      musicRef.current.volume = 0;
+      musicRef.current.play().catch(() => {});
+      fadeAudio(musicRef.current, true, 1500);
+    }
+  };
+
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[#f5f0eb]">
-      {/* Audio Elements */}
-      <audio ref={chillMusicRef} loop preload="auto">
-        <source src="/music/chilling_background.mp3" type="audio/mpeg" />
-      </audio>
-      <audio ref={hallOfFameRef} loop preload="auto">
-        <source src="/music/hall_of_fame.mp3" type="audio/mpeg" />
-      </audio>
-      <audio ref={onTopRef} loop preload="auto">
+      {/* Audio Element - On Top of the World throughout */}
+      <audio ref={musicRef} loop preload="auto">
         <source src="/music/on_top_of_the_world.mp3" type="audio/mpeg" />
       </audio>
+
+      {/* Start Audio Overlay */}
+      {!audioStarted && mounted && (
+        <div
+          onClick={handleStartAudio}
+          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center bg-[#f5f0eb]">
+          <div className="animate-[fadeIn_1s_ease-out] text-center">
+            <div className="mb-6 text-6xl">🎵</div>
+            <p className="mb-2 text-2xl font-bold text-[#1a2a5e] md:text-3xl">
+              Click để bắt đầu
+            </p>
+            <p className="text-lg text-[#1a2a5e]/70 md:text-xl">
+              Nhấn vào bất kỳ đâu để xem recap
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* Music Control Button */}
       <button
@@ -329,85 +254,17 @@ export default function RecapPage() {
       {/* Intro Phase */}
       {phase === "intro" && (
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6">
-          <h1 className="mb-6 animate-[fadeIn_2s_ease-out] text-center text-3xl font-bold text-[#1a2a5e] md:text-5xl lg:text-7xl">
-            CIO Year End Party 2026
-          </h1>
-          <p
-            className="animate-[fadeIn_2s_ease-out_0.5s_backwards] text-center text-lg font-light text-[#d1006c] md:text-2xl lg:text-3xl"
-            style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-            What we have together
-          </p>
-          <div className="mt-8 h-1 w-32 animate-[fadeIn_2s_ease-out_1s_backwards] bg-[#d1006c]/60" />
-        </div>
-      )}
-
-      {/* Throughout Year Phase */}
-      {phase === "throughout-year" &&
-        currentImageIndex < throughoutYearImages.length && (
-          <div className="absolute inset-0 z-10 flex flex-col">
-            {currentImageIndex === 0 && (
-              <div
-                className={`absolute left-1/2 top-8 z-20 -translate-x-1/2 px-6 transition-all duration-700 ${
-                  showTitle
-                    ? "translate-y-0 opacity-100"
-                    : "-translate-y-4 opacity-0"
-                }`}>
-              <h2 className="text-center text-2xl font-bold text-[#1a2a5e] md:text-4xl lg:text-5xl">
-                Hành trình 2025
-              </h2>
-              <p
-                className="mt-1 text-center text-base text-[#d1006c] md:text-xl lg:text-2xl"
-                style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-                Những thành tựu đáng tự hào
-              </p>
-              </div>
-            )}
-
-            <div className="relative flex flex-1 items-center justify-center overflow-hidden">
-              <div
-                className={`relative h-full w-full transition-all duration-700 ${
-                  isVisible
-                    ? "translate-x-0 opacity-100"
-                    : "translate-x-12 opacity-0"
-                }`}>
-                <Image
-                  src={throughoutYearImages[currentImageIndex].src}
-                  alt={throughoutYearImages[currentImageIndex].caption}
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
-            <div
-              className={`absolute bottom-8 left-0 right-0 px-6 transition-all duration-500 ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-4 opacity-0"
-              }`}>
-              <p
-                className="mx-auto max-w-4xl text-center text-lg font-medium text-[#1a2a5e] md:text-2xl"
-                style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-                {throughoutYearImages[currentImageIndex].caption}
-              </p>
-            </div>
-          </div>
-        )}
-
-      {/* Transition Phase */}
-      {phase === "transition" && (
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-6">
-          <div className="animate-[fadeIn_1.5s_ease-out]">
-            <h2 className="mb-4 text-center text-3xl font-bold text-[#1a2a5e] md:text-5xl lg:text-7xl">
-              Year End Party 2026
-            </h2>
+          <div className="animate-[fadeIn_2s_ease-out] text-center">
+            <h1 className="mb-4 text-3xl font-bold text-[#1a2a5e] md:text-5xl lg:text-7xl">
+              CIO Year End Party 2026
+            </h1>
             <p
-              className="text-center text-lg font-light text-[#d1006c] md:text-2xl lg:text-3xl"
+              className="text-lg font-light text-[#d1006c] md:text-2xl lg:text-3xl"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              Một đêm đáng nhớ cùng nhau
+              Từ thiệp mời với tình cảm
             </p>
           </div>
+          <div className="mt-8 h-1 w-32 animate-[fadeIn_2s_ease-out_1s_backwards] bg-[#d1006c]/60" />
         </div>
       )}
 
@@ -465,17 +322,19 @@ export default function RecapPage() {
       {phase === "outro" && (
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-8 px-6">
           <div className="animate-[fadeIn_2s_ease-out] text-center">
-            <h2 className="mb-4 text-3xl font-bold text-[#1a2a5e] md:text-5xl lg:text-7xl">
-              Cảm ơn mọi người!
-            </h2>
             <p
-              className="mb-2 text-lg text-[#d1006c] md:text-2xl lg:text-3xl"
+              className="mb-4 text-2xl text-[#d1006c] md:text-4xl lg:text-5xl"
               style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
-              Thank you for an amazing year
+              Thank you for being one of the reasons
             </p>
-            <p className="text-base text-[#1a2a5e]/70 md:text-xl lg:text-2xl">
-              Hẹn gặp lại trong những khoảnh khắc tuyệt vời tiếp theo
+            <p
+              className="mb-8 text-2xl text-[#d1006c] md:text-4xl lg:text-5xl"
+              style={{ fontFamily: "var(--font-dancing-script), cursive" }}>
+              that make CIO truly special
             </p>
+            <h2 className="mb-6 text-3xl font-bold text-[#1a2a5e] md:text-5xl lg:text-7xl">
+              Happy New Year! 🎉
+            </h2>
           </div>
 
           <div className="mt-8 flex flex-col gap-4 animate-[fadeIn_2s_ease-out_0.5s_backwards] sm:flex-row">
@@ -501,14 +360,11 @@ export default function RecapPage() {
       )}
 
       {/* Progress indicator */}
-      {phase !== "intro" && phase !== "outro" && phase !== "transition" && (
+      {phase === "within-yep" && (
         <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center">
           <div className="max-w-[90vw] overflow-x-auto scrollbar-hide">
             <div className="flex gap-1.5 px-4 md:gap-2">
-              {(phase === "throughout-year"
-                ? throughoutYearImages
-                : withinYepMedia
-              ).map((_, i) => (
+              {withinYepMedia.map((_, i) => (
                 <div
                   key={i}
                   className={`h-1.5 w-5 shrink-0 rounded-full transition-all duration-300 md:w-8 ${
